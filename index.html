@@ -537,4 +537,3005 @@
 
     /* CATEGORIES */
     .categories { padding: 3rem 4%; }
-    .category-grid { grid-template-columns: repeat(auto-fill, 
+    .category-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 0.8rem; }
+    .category-card { padding: 1.1rem 0.6rem; border-radius: 16px; }
+    .category-emoji { font-size: 2rem; }
+    .category-name { font-size: 0.78rem; }
+
+    /* MENU */
+    .menu { padding: 3rem 4%; }
+    .menu-header { margin-bottom: 1.5rem; }
+    .menu-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .food-img { height: 130px; font-size: 3.5rem; }
+    .food-info { padding: 0.9rem; }
+    .food-name { font-size: 0.88rem; }
+    .food-desc { display: none; }
+    .food-price { font-size: 1.1rem; }
+    .food-meta { display: none; }
+    .add-btn { width: 32px; height: 32px; font-size: 1.1rem; }
+
+    /* HOW IT WORKS */
+    .how { padding: 3rem 4%; }
+    .steps-grid { grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+    .step { padding: 1.4rem 1rem; }
+    .step-icon { font-size: 2rem; }
+    .step h3 { font-size: 0.95rem; }
+    .step p { font-size: 0.8rem; }
+    .step-num { font-size: 2.5rem; }
+
+    /* REVIEWS */
+    .reviews { padding: 3rem 4%; }
+    .reviews-grid { grid-template-columns: 1fr; gap: 1rem; margin-top: 1.5rem; }
+    .review-card { padding: 1.2rem; }
+
+    /* CTA BANNER */
+    .cta-banner {
+      margin: 0 4% 3rem;
+      padding: 2rem 4%;
+      flex-direction: column;
+      text-align: center;
+      gap: 1.2rem;
+      border-radius: 20px;
+    }
+    .cta-banner::after { display: none; }
+    .cta-banner h2 { font-size: 1.5rem; max-width: 100%; }
+    .cta-banner p { font-size: 0.88rem; }
+    .cta-banner-btn { width: 100%; text-align: center; padding: 0.9rem 1.5rem; font-size: 0.92rem; }
+
+    /* FOOTER */
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    footer { padding: 3rem 4% 1.5rem; }
+    .footer-bottom { flex-direction: column; text-align: center; gap: 0.5rem; }
+
+    /* FLOATS */
+    .cart-float { bottom: 1.2rem; right: 1rem; padding: 0.8rem 1.2rem; font-size: 0.85rem; }
+    #trackFloat { bottom: 4.5rem; right: 1rem; padding: 0.7rem 1.2rem; font-size: 0.85rem; }
+  }
+
+  /* ── 480px: small phones ── */
+  @media (max-width: 480px) {
+
+    /* NAV */
+    nav { padding: 0.55rem 3.5%; }
+    .nav-logo { font-size: 1.1rem; }
+    .nav-location-text { max-width: 90px; font-size: 0.68rem; }
+    .nav-location-sub  { max-width: 90px; font-size: 0.6rem; }
+    .loc-dropdown { top: 54px; }
+    #avatarBtn { width: 36px; height: 36px; font-size: 1rem; }
+
+    /* HERO */
+    .hero { padding: 5.5rem 4% 2.5rem; }
+    .hero h1 { font-size: clamp(1.7rem, 7vw, 2.2rem); line-height: 1.12; }
+    .hero-sub { font-size: 0.88rem; }
+    .hero-search { border-radius: 50px; }
+    .hero-search input { padding: 0.8rem 0.9rem; font-size: 0.82rem; }
+    .hero-search button { padding: 0.8rem 1rem; font-size: 0.8rem; }
+    .hero-stats { gap: 1.2rem; }
+    .stat-num { font-size: 1.3rem; }
+    .stat-label { font-size: 0.72rem; }
+
+    /* CATEGORIES */
+    .categories { padding: 2.5rem 4%; }
+    .section-label { font-size: 0.72rem; }
+    .section-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .category-grid { grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
+    .category-card { padding: 0.9rem 0.4rem; border-radius: 14px; }
+    .category-emoji { font-size: 1.7rem; margin-bottom: 0.4rem; }
+    .category-name { font-size: 0.68rem; }
+
+    /* MENU */
+    .menu { padding: 2.5rem 4%; }
+    .menu-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .food-img { height: 110px; font-size: 3rem; }
+    .food-info { padding: 0.75rem; }
+    .food-name { font-size: 0.82rem; }
+    .food-price { font-size: 1rem; }
+    .menu-tabs { gap: 0.35rem; }
+    .tab { padding: 0.4rem 0.85rem; font-size: 0.78rem; }
+
+    /* HOW IT WORKS */
+    .how { padding: 2.5rem 4%; }
+    .steps-grid { grid-template-columns: 1fr; gap: 0.8rem; margin-top: 1.2rem; }
+    .step { padding: 1.2rem; text-align: left; display: flex; align-items: flex-start; gap: 1rem; }
+    .step-icon { font-size: 1.8rem; margin-bottom: 0; flex-shrink: 0; }
+    .step-num { font-size: 2rem; top: 0.6rem; right: 0.8rem; }
+    .step h3 { font-size: 0.9rem; margin-bottom: 0.3rem; }
+    .step p { font-size: 0.78rem; }
+
+    /* REVIEWS */
+    .reviews { padding: 2.5rem 4%; }
+    .review-card { padding: 1rem; }
+    .review-text { font-size: 0.84rem; }
+
+    /* CTA BANNER */
+    .cta-banner { margin: 0 4% 2.5rem; padding: 1.6rem 4%; border-radius: 18px; }
+    .cta-banner h2 { font-size: 1.3rem; }
+
+    /* FOOTER */
+    .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .footer-desc { max-width: 100%; }
+    footer { padding: 2.5rem 4% 1.2rem; }
+
+    /* FLOATS */
+    .cart-float { bottom: 1rem; right: 0.8rem; padding: 0.7rem 1rem; font-size: 0.8rem; gap: 0.5rem; }
+    #trackFloat { bottom: 4rem; right: 0.8rem; padding: 0.6rem 1rem; font-size: 0.8rem; }
+    .cart-count { width: 20px; height: 20px; font-size: 0.7rem; }
+  }
+
+  /* ═══ ORDERS PAGE ═══ */
+  #ordersPage { display:none; padding-top:0; min-height:100vh; background:#F5EFE6; }
+  .op-wrap { max-width:860px; margin:0 auto; padding:1rem 1rem 5rem; }
+  .op-header { margin-bottom:1.8rem; }
+  .op-title { font-family:'Playfair Display',serif; font-size:2rem; font-weight:900; color:var(--dark); }
+  .op-sub { color:var(--smoke); font-size:.92rem; margin-top:.3rem; }
+  .op-tabs { display:flex; gap:.5rem; margin-bottom:1.8rem; background:#fff; padding:.3rem; border-radius:50px; width:fit-content; box-shadow:0 2px 12px rgba(26,10,0,.08); }
+  .op-tab { padding:.5rem 1.4rem; border-radius:50px; border:none; background:none; font-family:'DM Sans',sans-serif; font-weight:600; font-size:.86rem; color:var(--smoke); cursor:pointer; transition:all .2s; }
+  .op-tab.active { background:var(--fire); color:#fff; box-shadow:0 4px 14px rgba(255,60,31,.3); }
+  .op-summary { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.8rem; }
+  .op-stat { background:#fff; border-radius:18px; padding:1.1rem; text-align:center; box-shadow:0 2px 12px rgba(26,10,0,.06); }
+  .op-stat-num { font-family:'Playfair Display',serif; font-size:1.7rem; font-weight:700; color:var(--fire); }
+  .op-stat-label { font-size:.76rem; color:var(--smoke); margin-top:.2rem; }
+  .active-order-card { background:#fff; border-radius:24px; border:2px solid rgba(255,60,31,.2); box-shadow:0 8px 40px rgba(255,60,31,.1); overflow:hidden; margin-bottom:1.5rem; animation:fadeUp .4s ease; }
+  .aoc-header { background:linear-gradient(135deg,#7C3AED,#9333EA); padding:1rem 1.4rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem; }
+  .live-badge { background:rgba(255,255,255,.2); color:#fff; padding:.28rem .85rem; border-radius:50px; font-size:.73rem; font-weight:700; display:flex; align-items:center; gap:.4rem; }
+  .live-dot { width:7px; height:7px; border-radius:50%; background:#fff; animation:opBlink 1s infinite; }
+  .aoc-body { padding:1.3rem 1.4rem; }
+  .eta-row { display:flex; align-items:center; gap:1rem; background:#FFF8EF; border-radius:16px; padding:1rem 1.2rem; margin-bottom:1.1rem; }
+  .eta-ring { position:relative; width:54px; height:54px; flex-shrink:0; }
+  .eta-txt { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:.95rem; font-weight:700; color:var(--dark); line-height:1; }
+  .eta-unit { font-size:.52rem; font-family:'DM Sans',sans-serif; color:var(--smoke); }
+  .pbar-wrap { margin:.8rem 0 1rem; }
+  .pbar-steps { display:flex; justify-content:space-between; position:relative; }
+  .pbar-steps::before { content:''; position:absolute; top:13px; left:0; right:0; height:3px; background:#f0e8de; }
+  .pbar-fill { position:absolute; top:13px; left:0; height:3px; background:linear-gradient(90deg,var(--fire),var(--ember)); transition:width 1s ease; border-radius:2px; }
+  .pstep { display:flex; flex-direction:column; align-items:center; gap:.35rem; position:relative; z-index:1; }
+  .pstep-dot { width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.82rem; background:#f0e8de; transition:all .4s; border:2px solid #f0e8de; }
+  .pstep.done .pstep-dot { background:var(--green); border-color:var(--green); color:#fff; }
+  .pstep.cur  .pstep-dot { background:var(--fire); border-color:var(--fire); animation:opPulse 1.5s infinite; }
+  .pstep-lbl { font-size:.64rem; color:var(--light-smoke); font-weight:500; text-align:center; max-width:58px; }
+  .pstep.done .pstep-lbl, .pstep.cur .pstep-lbl { color:var(--charcoal); }
+  .chips-row { display:flex; gap:.5rem; flex-wrap:wrap; margin:.8rem 0; }
+  .chip { background:#f5ede3; border-radius:50px; padding:.32rem .9rem; font-size:.8rem; color:var(--charcoal); }
+  .item-tags { display:flex; gap:.5rem; flex-wrap:wrap; margin:.6rem 0 .9rem; }
+  .item-tag { background:#FFF0E0; border-radius:50px; padding:.3rem .85rem; font-size:.8rem; color:var(--charcoal); display:flex; align-items:center; gap:.3rem; }
+  .aoc-actions { display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.9rem; }
+  .aoc-btn { padding:.55rem 1.2rem; border-radius:50px; font-size:.83rem; font-weight:600; font-family:'DM Sans',sans-serif; cursor:pointer; border:none; text-decoration:none; display:inline-flex; align-items:center; transition:all .2s; }
+  .aoc-btn-primary { background:var(--fire); color:#fff; }
+  .aoc-btn-primary:hover { background:var(--ember); }
+  .aoc-btn-outline { background:#fff; color:var(--smoke); border:1.5px solid #ddd; }
+  .aoc-btn-outline:hover { border-color:var(--fire); color:var(--fire); }
+  .past-card { background:#fff; border-radius:20px; box-shadow:0 2px 16px rgba(26,10,0,.06); margin-bottom:.9rem; overflow:hidden; transition:transform .2s,box-shadow .2s; animation:fadeUp .4s ease both; }
+  .past-card:hover { transform:translateY(-3px); box-shadow:0 8px 28px rgba(26,10,0,.1); }
+  .pc-head { padding:.9rem 1.3rem; display:flex; align-items:center; gap:.9rem; cursor:pointer; }
+  .pc-emoji { width:46px; height:46px; border-radius:13px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; flex-shrink:0; }
+  .pc-info { flex:1; min-width:0; }
+  .pc-name { font-weight:700; font-size:.92rem; color:var(--dark); }
+  .pc-date { font-size:.76rem; color:var(--smoke); margin-top:.12rem; }
+  .pc-right { text-align:right; flex-shrink:0; }
+  .pc-price { font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:700; color:var(--dark); }
+  .st-pill { font-size:.7rem; font-weight:700; padding:.22rem .65rem; border-radius:50px; display:inline-block; margin-top:.25rem; }
+  .st-delivered { background:#e8f5e9; color:#27AE60; }
+  .st-cancelled  { background:#fce8e8; color:#e53935; }
+  .pc-chev { color:var(--light-smoke); font-size:1rem; transition:transform .3s; flex-shrink:0; }
+  .pc-chev.open { transform:rotate(180deg); }
+  .pc-body { display:none; padding:.85rem 1.3rem; border-top:1px solid #f5ede3; }
+  .pc-body.open { display:block; }
+  .pc-items { display:flex; flex-direction:column; gap:.45rem; margin-bottom:.8rem; }
+  .pc-item { display:flex; justify-content:space-between; font-size:.85rem; }
+  .pc-item-n { color:var(--charcoal); }
+  .pc-item-p { color:var(--smoke); }
+  .pc-total { display:flex; justify-content:space-between; border-top:1px solid #f5ede3; padding-top:.65rem; font-weight:700; font-size:.9rem; }
+  .reorder-btn { width:100%; margin-top:.75rem; background:var(--fire); color:#fff; border:none; padding:.7rem; border-radius:50px; font-weight:600; font-size:.88rem; cursor:pointer; font-family:'DM Sans',sans-serif; transition:background .2s; }
+  .reorder-btn:hover { background:var(--ember); }
+  .op-empty { text-align:center; padding:3.5rem 2rem; color:var(--light-smoke); }
+  .op-empty-icon { font-size:3.5rem; margin-bottom:.8rem; display:block; }
+  .op-empty-title { font-size:1rem; font-weight:600; color:var(--smoke); }
+  .op-empty-sub { font-size:.83rem; margin-top:.35rem margin-bottom:1.2rem; }
+  .green { color:var(--green); }
+  @keyframes opBlink { 0%,100%{opacity:1}50%{opacity:.3} }
+  @keyframes opPulse { 0%,100%{box-shadow:0 0 0 5px rgba(255,60,31,.18)}50%{box-shadow:0 0 0 10px rgba(255,60,31,.06)} }
+
+
+  /* ═══ PROFILE PAGE ═══ */
+  #profilePage { display:none; padding-top:0; min-height:100vh; background:#F5EFE6; }
+  .pf-wrap { max-width:800px; margin:0 auto; padding:1rem 1rem 5rem; }
+
+  /* Hero card */
+  .pf-hero {
+    background:linear-gradient(135deg,#7C3AED 0%,#9333EA 50%,#F97316 100%);
+    border-radius:24px; padding:1.6rem;
+    display:grid; grid-template-columns:auto 1fr auto;
+    align-items:center; gap:1.2rem;
+    margin-bottom:1.5rem; position:relative; overflow:hidden;
+  }
+  .pf-hero::after { content:''; position:absolute; right:-20px; top:-20px; width:140px; height:140px; border-radius:50%; background:rgba(255,255,255,.08); pointer-events:none; }
+  .pf-avatar-wrap { position:relative; flex-shrink:0; }
+  .pf-avatar {
+    width:76px; height:76px; border-radius:50%;
+    background:rgba(255,255,255,.22);
+    border:3px solid rgba(255,255,255,.7);
+    display:flex; align-items:center; justify-content:center;
+    font-size:2.4rem; cursor:pointer; transition:transform .2s;
+    overflow:hidden;
+  }
+  .pf-avatar img { width:100%; height:100%; object-fit:cover; border-radius:50%; }
+  .pf-avatar:hover { transform:scale(1.05); }
+  .pf-avatar-edit {
+    position:absolute; bottom:1px; right:1px;
+    width:24px; height:24px; border-radius:50%;
+    background:#fff; border:none; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    font-size:.7rem; box-shadow:0 2px 8px rgba(0,0,0,.25); line-height:1;
+  }
+  .pf-hero-info { min-width:0; }
+  .pf-name { font-family:'DM Sans',sans-serif; font-size:1.3rem; font-weight:700; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .pf-email { color:rgba(255,255,255,.85); font-size:.82rem; margin-top:.2rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .pf-member { display:inline-flex; align-items:center; gap:.35rem; background:rgba(255,255,255,.18); color:#fff; padding:.28rem .85rem; border-radius:50px; font-size:.72rem; font-weight:600; margin-top:.55rem; white-space:nowrap; }
+  .pf-edit-btn { background:rgba(255,255,255,.18); border:1.5px solid rgba(255,255,255,.45); color:#fff; padding:.5rem 1.1rem; border-radius:50px; font-size:.82rem; font-weight:600; cursor:pointer; font-family:'DM Sans',sans-serif; transition:background .2s; white-space:nowrap; }
+  .pf-edit-btn:hover { background:rgba(255,255,255,.3); }
+  /* Avatar picker modal */
+  .av-modal-overlay { display:none; position:fixed; inset:0; background:rgba(26,10,0,.6); backdrop-filter:blur(6px); z-index:500; align-items:flex-end; justify-content:center; }
+  .av-modal-overlay.open { display:flex; }
+  .av-sheet { background:#fff; border-radius:28px 28px 0 0; width:100%; max-width:520px; padding:1.5rem 1.5rem 2.5rem; animation:slideUp .3s cubic-bezier(.34,1.2,.64,1); }
+  @keyframes slideUp { from{transform:translateY(100%);opacity:0} to{transform:translateY(0);opacity:1} }
+  .av-sheet-title { font-weight:700; font-size:1.05rem; color:var(--dark); margin-bottom:1.2rem; display:flex; justify-content:space-between; align-items:center; }
+  .av-section-label { font-size:.72rem; font-weight:700; color:var(--smoke); text-transform:uppercase; letter-spacing:.5px; margin-bottom:.7rem; }
+  .av-emoji-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:.6rem; margin-bottom:1.2rem; }
+  .av-emoji-btn { width:100%; aspect-ratio:1; border-radius:50%; border:2.5px solid transparent; background:#FFF0E0; font-size:1.6rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .15s; }
+  .av-emoji-btn:hover, .av-emoji-btn.selected { border-color:var(--fire); background:#FFE0C0; transform:scale(1.1); }
+  .av-upload-btn { width:100%; padding:.85rem; border:2px dashed #ddd; border-radius:16px; background:none; font-family:'DM Sans',sans-serif; font-size:.9rem; color:var(--smoke); cursor:pointer; transition:border-color .2s,color .2s; display:flex; align-items:center; justify-content:center; gap:.6rem; }
+  .av-upload-btn:hover { border-color:var(--fire); color:var(--fire); }
+  .av-preview { width:72px; height:72px; border-radius:50%; object-fit:cover; border:3px solid var(--fire); margin:0 auto .8rem; display:none; }
+
+  /* Stats row */
+  .pf-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-bottom:1.5rem; }
+  .pf-stat { background:#fff; border-radius:18px; padding:1.1rem; text-align:center; box-shadow:0 2px 12px rgba(26,10,0,.06); }
+  .pf-stat-num { font-family:'Playfair Display',serif; font-size:1.7rem; font-weight:700; color:var(--fire); }
+  .pf-stat-lbl { font-size:.74rem; color:var(--smoke); margin-top:.2rem; }
+
+  /* Section card */
+  .pf-card { background:#fff; border-radius:20px; box-shadow:0 2px 16px rgba(26,10,0,.06); margin-bottom:1.2rem; overflow:hidden; }
+  .pf-card-head { padding:1rem 1.4rem; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #f5ede3; }
+  .pf-card-title { font-weight:700; font-size:.95rem; color:var(--dark); display:flex; align-items:center; gap:.5rem; }
+  .pf-card-action { color:var(--fire); font-size:.82rem; font-weight:600; cursor:pointer; border:none; background:none; font-family:'DM Sans',sans-serif; }
+
+  /* Personal info fields */
+  .pf-fields { padding:1rem 1.4rem; display:flex; flex-direction:column; gap:.9rem; }
+  .pf-field { display:flex; align-items:center; gap:1rem; }
+  .pf-field-icon { width:36px; height:36px; border-radius:10px; background:#FFF0E0; display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; }
+  .pf-field-info { flex:1; }
+  .pf-field-label { font-size:.72rem; color:var(--smoke); text-transform:uppercase; letter-spacing:.4px; }
+  .pf-field-val { font-size:.92rem; color:var(--dark); font-weight:500; margin-top:.1rem; }
+  .pf-field-input { font-size:.92rem; color:var(--dark); font-weight:500; border:none; outline:none; font-family:'DM Sans',sans-serif; width:100%; background:transparent; }
+
+  /* Edit mode */
+  .pf-field.editing .pf-field-val { display:none; }
+  .pf-field:not(.editing) .pf-field-input { display:none; }
+  .pf-field.editing { background:#FFF8EF; border-radius:12px; padding:.5rem .7rem; margin:0 -.7rem; }
+
+  /* Active order in profile */
+  .pf-active-mini { padding:1rem 1.4rem; }
+  .pf-active-row { display:flex; align-items:center; gap:1rem; padding:.85rem 1rem; background:#FFF8EF; border-radius:16px; cursor:pointer; transition:background .2s; }
+  .pf-active-row:hover { background:#FFEFDf; }
+  .pf-eta-badge { background:var(--fire); color:#fff; padding:.3rem .8rem; border-radius:50px; font-size:.78rem; font-weight:700; white-space:nowrap; flex-shrink:0; }
+  .pf-live-ring { width:36px; height:36px; flex-shrink:0; position:relative; }
+
+  /* Addresses */
+  .pf-addr-list { padding:.5rem 1.4rem 1rem; display:flex; flex-direction:column; gap:.7rem; }
+  .pf-addr { display:flex; align-items:center; gap:.85rem; padding:.7rem .9rem; border-radius:14px; border:1.5px solid #f0e8de; transition:border-color .2s; }
+  .pf-addr:hover { border-color:var(--fire); }
+  .pf-addr-icon { font-size:1.2rem; flex-shrink:0; }
+  .pf-addr-info { flex:1; }
+  .pf-addr-tag { font-size:.72rem; font-weight:700; color:var(--fire); text-transform:uppercase; letter-spacing:.4px; }
+  .pf-addr-text { font-size:.85rem; color:var(--charcoal); margin-top:.1rem; }
+  .pf-addr-default { font-size:.68rem; background:#e8f5e9; color:#27AE60; padding:.15rem .6rem; border-radius:50px; font-weight:600; }
+  .add-addr-btn { margin:.2rem 1.4rem 1rem; background:none; border:1.5px dashed #ddd; border-radius:14px; padding:.7rem; width:calc(100% - 2.8rem); font-family:'DM Sans',sans-serif; font-size:.85rem; color:var(--smoke); cursor:pointer; transition:border-color .2s,color .2s; }
+  .add-addr-btn:hover { border-color:var(--fire); color:var(--fire); }
+
+  /* Past mini orders */
+  .pf-orders-mini { padding:.5rem 1.4rem 1rem; display:flex; flex-direction:column; gap:.65rem; }
+  .pf-order-row { display:flex; align-items:center; gap:.9rem; padding:.7rem .9rem; border-radius:14px; border:1.5px solid #f0e8de; cursor:pointer; transition:all .2s; }
+  .pf-order-row:hover { border-color:var(--fire); transform:translateX(3px); }
+  .pf-order-emoji { width:38px; height:38px; border-radius:10px; background:#FFF0E0; display:flex; align-items:center; justify-content:center; font-size:1.2rem; flex-shrink:0; }
+  .pf-order-info { flex:1; }
+  .pf-order-name { font-size:.88rem; font-weight:600; color:var(--dark); }
+  .pf-order-date { font-size:.74rem; color:var(--smoke); margin-top:.08rem; }
+  .pf-order-amt { font-family:'Playfair Display',serif; font-size:1rem; font-weight:700; color:var(--dark); flex-shrink:0; }
+  .pf-see-all { display:block; text-align:center; margin:.2rem 1.4rem 1rem; color:var(--fire); font-size:.85rem; font-weight:600; cursor:pointer; border:none; background:none; font-family:'DM Sans',sans-serif; }
+
+  /* Preferences */
+  .pf-prefs { padding:.8rem 1.4rem 1rem; display:flex; flex-direction:column; gap:.5rem; }
+  .pf-pref-row { display:flex; align-items:center; justify-content:space-between; padding:.5rem 0; border-bottom:1px solid #f5ede3; }
+  .pf-pref-row:last-child { border:none; }
+  .pf-pref-label { font-size:.88rem; color:var(--charcoal); display:flex; align-items:center; gap:.6rem; }
+  .pf-toggle { position:relative; width:44px; height:24px; flex-shrink:0; }
+  .pf-toggle input { opacity:0; width:0; height:0; }
+  .pf-toggle-slider { position:absolute; inset:0; border-radius:24px; background:#ddd; cursor:pointer; transition:.3s; }
+  .pf-toggle input:checked + .pf-toggle-slider { background:var(--fire); }
+  .pf-toggle-slider::before { content:''; position:absolute; width:18px; height:18px; border-radius:50%; background:#fff; top:3px; left:3px; transition:.3s; box-shadow:0 1px 4px rgba(0,0,0,.2); }
+  .pf-toggle input:checked + .pf-toggle-slider::before { transform:translateX(20px); }
+
+  /* Logout */
+  .pf-logout { width:100%; margin-top:.5rem; background:none; border:1.5px solid #ddd; border-radius:50px; padding:.8rem; font-family:'DM Sans',sans-serif; font-size:.9rem; font-weight:600; color:var(--smoke); cursor:pointer; transition:all .2s; }
+  .pf-logout:hover { border-color:#e53935; color:#e53935; }
+
+  /* Edit modal */
+  .pf-modal-overlay { display:none; position:fixed; inset:0; background:rgba(26,10,0,.5); backdrop-filter:blur(4px); z-index:400; align-items:center; justify-content:center; padding:1rem; }
+  .pf-modal { background:#fff; border-radius:24px; width:min(480px,100%); padding:2rem; box-shadow:0 24px 80px rgba(0,0,0,.25); animation:pfPop .3s cubic-bezier(.34,1.4,.64,1); }
+  .pf-modal-title { font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:700; color:var(--dark); margin-bottom:1.5rem; }
+  .pf-input-group { margin-bottom:1.1rem; }
+  .pf-input-label { font-size:.78rem; font-weight:600; color:var(--smoke); text-transform:uppercase; letter-spacing:.4px; margin-bottom:.4rem; display:block; }
+  .pf-input { width:100%; padding:.75rem 1rem; border:1.5px solid #f0e8de; border-radius:12px; font-family:'DM Sans',sans-serif; font-size:.92rem; color:var(--dark); outline:none; transition:border-color .2s; }
+  .pf-input:focus { border-color:var(--fire); }
+  .pf-modal-actions { display:flex; gap:.8rem; margin-top:1.5rem; }
+  .pf-modal-save { flex:1; background:var(--fire); color:#fff; border:none; padding:.85rem; border-radius:50px; font-weight:700; font-size:.95rem; cursor:pointer; font-family:'DM Sans',sans-serif; transition:background .2s; }
+  .pf-modal-save:hover { background:var(--ember); }
+  .pf-modal-cancel { flex:1; background:#f5ede3; color:var(--smoke); border:none; padding:.85rem; border-radius:50px; font-weight:600; font-size:.95rem; cursor:pointer; font-family:'DM Sans',sans-serif; }
+  @keyframes pfPop { from{opacity:0;transform:scale(.88)} to{opacity:1;transform:scale(1)} }
+
+  @media(max-width:600px) {
+    .pf-hero { padding:1rem; gap:.8rem; grid-template-columns:auto 1fr; }
+    .pf-edit-btn { grid-column:1/-1; text-align:center; width:100%; }
+    .pf-stats { grid-template-columns:1fr 1fr; }
+    .pf-stats .pf-stat:last-child { grid-column:1/-1; }
+    .pf-name { font-size:1.15rem; }
+    .pf-email { font-size:.75rem; }
+    .pf-member { font-size:.68rem; padding:.22rem .7rem; }
+    .pf-avatar { width:64px; height:64px; font-size:2rem; }
+    .pf-wrap { padding:1.2rem 1rem 4rem; }
+    .op-summary { grid-template-columns:1fr 1fr; }
+    .op-summary .op-stat:last-child { grid-column:1/-1; }
+    .op-wrap { padding:1.2rem 1rem 4rem; }
+    .pbar-steps { gap:0; }
+    .pstep-lbl { font-size:.58rem; max-width:46px; }
+  }
+
+
+  /* ═══ SEARCH SYSTEM ═══ */
+  .hero-search {
+    position: relative;
+  }
+  .search-dropdown {
+    display: none; position: absolute; top: calc(100% + 10px); left: 0; right: 0;
+    background: #fff; border-radius: 20px; z-index: 300;
+    box-shadow: 0 16px 50px rgba(26,10,0,0.16);
+    border: 1px solid rgba(255,60,31,0.1);
+    overflow: hidden; max-height: 420px; overflow-y: auto;
+  }
+  .search-dropdown.open { display: block; animation: srchDrop .18s ease; }
+  @keyframes srchDrop { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+
+  .srch-section-label {
+    padding: .6rem 1rem .3rem;
+    font-size: .68rem; font-weight: 700; letter-spacing: .6px;
+    text-transform: uppercase; color: var(--light-smoke);
+  }
+  .srch-item {
+    display: flex; align-items: center; gap: .85rem;
+    padding: .75rem 1rem; cursor: pointer; transition: background .15s;
+  }
+  .srch-item:hover { background: #FFF8EF; }
+  .srch-item-icon {
+    width: 42px; height: 42px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; flex-shrink: 0;
+  }
+  .srch-item-info { flex: 1; min-width: 0; }
+  .srch-item-name { font-size: .9rem; font-weight: 600; color: var(--dark); }
+  .srch-item-name mark { background: rgba(255,60,31,0.15); color: var(--fire); border-radius: 3px; padding: 0 2px; }
+  .srch-item-sub { font-size: .75rem; color: var(--smoke); margin-top: .1rem; }
+  .srch-item-right { font-size: .8rem; font-weight: 600; color: var(--fire); flex-shrink: 0; }
+  .srch-divider { height: 1px; background: #f5ede3; margin: .2rem 0; }
+  .srch-empty { padding: 2rem 1rem; text-align: center; color: var(--smoke); font-size: .88rem; }
+  .srch-empty-icon { font-size: 2rem; display: block; margin-bottom: .5rem; }
+  .srch-tag { display:inline-flex;align-items:center;gap:.3rem;background:#FFF0E0;border-radius:50px;padding:.28rem .75rem;font-size:.75rem;font-weight:600;color:var(--charcoal);cursor:pointer;transition:all .15s;border:1px solid transparent; }
+  .srch-tag:hover { border-color:var(--fire);color:var(--fire); }
+  .srch-tags { display:flex;flex-wrap:wrap;gap:.4rem;padding:.5rem 1rem .8rem; }
+
+  /* Search results overlay page */
+  #searchResultsPage {
+    display: none; position: fixed; inset: 0; z-index: 150;
+    background: var(--cream); overflow-y: auto; padding-top: 70px;
+  }
+  #searchResultsPage.open { display: block; }
+  .srp-header {
+    position: sticky; top: 0; background: rgba(255,248,239,.96);
+    backdrop-filter: blur(12px); padding: .75rem 5%;
+    display: flex; align-items: center; gap: .8rem;
+    border-bottom: 1px solid rgba(255,60,31,.1); z-index: 10;
+  }
+  .srp-back { background: none; border: none; font-size: 1.3rem; cursor: pointer; color: var(--smoke); padding: .2rem .4rem; }
+  .srp-input-wrap {
+    flex: 1; display: flex; align-items: center;
+    background: #fff; border-radius: 50px; padding: .55rem 1rem;
+    border: 1.5px solid rgba(255,60,31,.2); gap: .5rem;
+  }
+  .srp-input-wrap input {
+    flex: 1; border: none; outline: none; font-family: 'DM Sans',sans-serif;
+    font-size: .92rem; color: var(--dark); background: transparent;
+  }
+  .srp-clear { background: none; border: none; cursor: pointer; color: var(--smoke); font-size: 1.1rem; line-height: 1; }
+  .srp-body { padding: 1.2rem 5%; }
+  .srp-count { font-size: .82rem; color: var(--smoke); margin-bottom: 1rem; }
+  .srp-count strong { color: var(--dark); }
+  .srp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 1.2rem; }
+  .srp-restaurant-card {
+    background: #fff; border-radius: 20px; overflow: hidden;
+    box-shadow: 0 2px 16px rgba(26,10,0,.07); cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .srp-restaurant-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(26,10,0,.12); }
+  .srp-rest-banner { height: 90px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+  .srp-rest-info { padding: .9rem 1rem; }
+  .srp-rest-name { font-weight: 700; font-size: .95rem; color: var(--dark); }
+  .srp-rest-name mark { background: rgba(255,60,31,.12); color: var(--fire); border-radius: 3px; padding: 0 2px; }
+  .srp-rest-meta { font-size: .76rem; color: var(--smoke); margin-top: .25rem; display: flex; gap: .8rem; }
+  .srp-filter-row { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1.2rem; }
+  .srp-filter {
+    padding:.35rem .95rem; border-radius:50px; border:1.5px solid #f0e8de;
+    background:#fff; font-family:'DM Sans',sans-serif; font-size:.8rem;
+    font-weight:600; color:var(--smoke); cursor:pointer; transition:all .15s;
+  }
+  .srp-filter.active, .srp-filter:hover { background:var(--fire); border-color:var(--fire); color:#fff; }
+  @media(max-width:480px) {
+    .srp-grid { grid-template-columns:1fr 1fr; gap:.75rem; }
+    .srp-body { padding:1rem 4%; }
+  }
+
+
+  /* ═══ RESTAURANT LISTING ═══ */
+  .restaurants-section { padding: 3.5rem 5%; background: var(--cream); }
+  .rest-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1.2rem; margin-top:1.5rem; }
+  .rest-card {
+    background:#fff; border-radius:20px; overflow:hidden;
+    box-shadow:0 2px 16px rgba(30,10,60,.07); cursor:pointer;
+    transition:transform .2s,box-shadow .2s;
+  }
+  .rest-card:hover { transform:translateY(-4px); box-shadow:0 10px 32px rgba(30,10,60,.13); }
+  .rest-banner { height:160px; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; font-size:5rem; }
+  .rest-banner img { width:100%; height:100%; object-fit:cover; }
+  .rest-offer-badge {
+    position:absolute; top:10px; left:10px;
+    background:rgba(20,10,40,.72); color:#fff;
+    padding:.28rem .75rem; border-radius:50px; font-size:.72rem; font-weight:700;
+  }
+  .rest-bookmark {
+    position:absolute; top:10px; right:10px;
+    background:rgba(255,255,255,.88); border:none; border-radius:50%;
+    width:32px; height:32px; cursor:pointer; font-size:.9rem;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .rest-info { padding:1rem; }
+  .rest-name { font-weight:700; font-size:1rem; color:var(--dark); margin-bottom:.4rem; }
+  .rest-meta { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; font-size:.78rem; color:var(--smoke); }
+  .rest-rating { background:#27AE60; color:#fff; padding:.18rem .55rem; border-radius:50px; font-size:.75rem; font-weight:700; display:flex; align-items:center; gap:.25rem; }
+  .rest-free { color:#27AE60; font-weight:600; }
+  .rest-offer { color:var(--fire); font-size:.75rem; font-weight:600; margin-top:.4rem; display:flex; align-items:center; gap:.3rem; }
+  .rest-tag { background:#F5F0FF; color:var(--fire); font-size:.68rem; font-weight:600; padding:.15rem .55rem; border-radius:50px; }
+
+  /* ═══ RESTAURANT DETAIL PAGE ═══ */
+  #restPage { display:none; position:fixed; inset:0; z-index:160; background:#f8f6ff; overflow-y:auto; padding-top:0; }
+  #restPage.open { display:block; }
+  .rp-header {
+    position:sticky; top:0; z-index:10;
+    background:rgba(248,246,255,.97); backdrop-filter:blur(12px);
+    padding:.8rem 5%; display:flex; align-items:center; gap:.8rem;
+    border-bottom:1px solid rgba(124,58,237,.1);
+  }
+  .rp-back { background:none; border:none; font-size:1.3rem; cursor:pointer; color:var(--smoke); padding:.2rem .3rem; }
+  .rp-title { font-weight:700; font-size:1rem; color:var(--dark); flex:1; }
+  .rp-search-btn { background:none; border:none; font-size:1.1rem; cursor:pointer; color:var(--smoke); }
+  .rp-banner { height:200px; position:relative; display:flex; align-items:center; justify-content:center; font-size:8rem; overflow:hidden; }
+  .rp-info-card {
+    background:#fff; margin:0 4% 1rem; border-radius:20px;
+    padding:1.2rem 1.3rem; box-shadow:0 2px 16px rgba(30,10,60,.07);
+  }
+  .rp-rest-name { font-weight:800; font-size:1.3rem; color:var(--dark); margin-bottom:.4rem; }
+  .rp-rest-meta { display:flex; gap:.8rem; flex-wrap:wrap; font-size:.8rem; color:var(--smoke); align-items:center; }
+  .rp-rating-big { background:#27AE60; color:#fff; padding:.3rem .75rem; border-radius:50px; font-weight:700; font-size:.88rem; }
+  .rp-offer-strip {
+    background:#FFF0FF; border:1px dashed var(--fire); border-radius:14px;
+    padding:.75rem 1rem; margin:0 4% .8rem;
+    display:flex; align-items:center; gap:.7rem; font-size:.82rem; color:var(--dark);
+  }
+  .rp-offer-icon { font-size:1.2rem; }
+  .rp-filters { display:flex; gap:.5rem; padding:.5rem 4% .8rem; overflow-x:auto; scrollbar-width:none; }
+  .rp-filters::-webkit-scrollbar { display:none; }
+  .rp-filter-btn { padding:.38rem 1rem; border-radius:50px; border:1.5px solid #e0d8f0; background:#fff; font-family:'DM Sans',sans-serif; font-size:.8rem; font-weight:600; color:var(--smoke); cursor:pointer; white-space:nowrap; transition:all .15s; flex-shrink:0; }
+  .rp-filter-btn.active { background:var(--fire); border-color:var(--fire); color:#fff; }
+  .rp-section-title { font-weight:800; font-size:1rem; color:var(--dark); padding:.8rem 4% .5rem; display:flex; justify-content:space-between; align-items:center; }
+  .rp-section-toggle { background:none; border:none; font-size:1rem; cursor:pointer; color:var(--smoke); }
+  .rp-menu-item {
+    display:flex; align-items:flex-start; gap:1rem;
+    padding:1rem 4%; border-bottom:1px solid #f0eaf8; background:#fff;
+  }
+  .rp-item-info { flex:1; min-width:0; }
+  .rp-veg-icon { width:16px; height:16px; border-radius:3px; border:1.5px solid; display:inline-flex; align-items:center; justify-content:center; margin-bottom:.3rem; flex-shrink:0; }
+  .rp-veg-icon.veg { border-color:#27AE60; }
+  .rp-veg-icon.veg::after { content:''; width:8px; height:8px; border-radius:50%; background:#27AE60; }
+  .rp-veg-icon.nonveg { border-color:#E53935; }
+  .rp-veg-icon.nonveg::after { content:''; width:8px; height:8px; border-radius:50%; background:#E53935; }
+  .rp-item-name { font-weight:700; font-size:.95rem; color:var(--dark); margin-bottom:.2rem; }
+  .rp-item-reorder { color:#27AE60; font-size:.72rem; font-weight:600; display:flex; align-items:center; gap:.3rem; margin-bottom:.3rem; }
+  .rp-item-price { font-weight:700; font-size:.95rem; color:var(--dark); margin-bottom:.3rem; }
+  .rp-item-desc { font-size:.78rem; color:var(--smoke); line-height:1.5; }
+  .rp-item-img { width:110px; height:110px; border-radius:16px; object-fit:cover; flex-shrink:0; position:relative; display:flex; align-items:center; justify-content:center; font-size:3.5rem; overflow:hidden; pointer-events:none; }
+  .rp-add-btn-wrap { position:absolute; bottom:-1px; left:50%; transform:translateX(-50%); pointer-events:auto; }
+  .rp-add-btn {
+    background:#fff; border:1.5px solid var(--fire); color:var(--fire);
+    padding:.4rem 1.2rem; border-radius:50px; font-family:'DM Sans',sans-serif;
+    font-weight:700; font-size:.88rem; cursor:pointer; white-space:nowrap;
+    display:flex; align-items:center; gap:.3rem; box-shadow:0 2px 10px rgba(124,58,237,.18);
+    transition:all .15s;
+  }
+  .rp-add-btn:hover { background:var(--fire); color:#fff; }
+  .rp-stepper {
+    display:flex; align-items:center; gap:5px;
+    background:#fff; border-radius:50px; border:1.5px solid var(--fire);
+    padding:.25rem .5rem; box-shadow:0 2px 10px rgba(124,58,237,.18);
+  }
+  .rp-stepper button { background:none; border:none; color:var(--fire); font-size:1.1rem; font-weight:700; cursor:pointer; width:24px; height:24px; display:flex; align-items:center; justify-content:center; }
+  .rp-stepper span { font-weight:800; font-size:.9rem; min-width:18px; text-align:center; color:var(--dark); }
+  .rp-customise { font-size:.68rem; color:var(--smoke); text-align:center; margin-top:.2rem; }
+  .rp-section-divider { height:8px; background:#f0eaf8; }
+
+  @media(max-width:600px) {
+    .rest-grid { grid-template-columns:1fr; }
+    .rp-banner { height:160px; font-size:6rem; }
+    .rp-item-img { width:90px; height:90px; font-size:2.8rem; }
+  }
+
+
+  /* ═══ LOGIN PAGE ═══ */
+  #loginPage { display:none; position:fixed; inset:0; z-index:500; background:linear-gradient(135deg,#7C3AED 0%,#9333EA 60%,#F97316 100%); align-items:center; justify-content:center; padding:2rem; }
+  #loginPage.open { display:flex; }
+  .login-card { background:#fff; border-radius:28px; width:min(400px,100%); padding:2.5rem 2rem; box-shadow:0 24px 80px rgba(0,0,0,.3); animation:pfPop .35s cubic-bezier(.34,1.4,.64,1); }
+  .login-logo { font-family:'Nunito','DM Sans',sans-serif; font-size:2.2rem; font-weight:900; margin-bottom:.3rem; text-align:center; }
+  .login-sub { text-align:center; color:var(--smoke); font-size:.88rem; margin-bottom:2rem; }
+  .login-step { display:none; }
+  .login-step.active { display:block; }
+  .login-label { font-size:.78rem; font-weight:700; color:var(--smoke); text-transform:uppercase; letter-spacing:.5px; margin-bottom:.5rem; display:block; }
+  .login-input { width:100%; padding:.85rem 1rem; border:2px solid #f0e8de; border-radius:14px; font-family:'DM Sans',sans-serif; font-size:1rem; color:var(--dark); outline:none; transition:border-color .2s; margin-bottom:1rem; }
+  .login-input:focus { border-color:var(--fire); }
+  .login-btn { width:100%; background:var(--fire); color:#fff; border:none; padding:1rem; border-radius:50px; font-family:'DM Sans',sans-serif; font-size:1rem; font-weight:700; cursor:pointer; transition:background .2s; }
+  .login-btn:hover { background:var(--ember); }
+  .login-otp-hint { background:#F5F0FF; border-radius:12px; padding:.75rem 1rem; font-size:.82rem; color:var(--fire); text-align:center; margin-bottom:1rem; }
+  .login-back { background:none; border:none; color:var(--smoke); font-size:.85rem; cursor:pointer; font-family:'DM Sans',sans-serif; margin-top:.8rem; width:100%; text-align:center; }
+  .login-welcome { text-align:center; padding:1rem 0; }
+  .login-welcome-emoji { font-size:3rem; display:block; margin-bottom:.8rem; }
+  .login-welcome-name { font-size:1.2rem; font-weight:700; color:var(--dark); margin-bottom:.4rem; }
+  .login-welcome-sub { font-size:.85rem; color:var(--smoke); }
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <!-- Brand + Location -->
+  <div class="nav-brand">
+    <div class="nav-logo" onclick="navLogoClick(event)" style="cursor:pointer;display:inline-block;"><span style="background:linear-gradient(135deg,#FF8C00,#F97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">X</span><span style="color:#7C3AED;">oofy</span></div>
+    <button class="nav-location-bar" onclick="toggleLocDropdown()" style="background:none;border:none;padding:0;text-align:left;font-family:inherit;display:flex;align-items:center;gap:0.3rem;cursor:pointer;max-width:220px;-webkit-tap-highlight-color:transparent;">
+      <span class="nav-location-icon">📍</span>
+      <div style="min-width:0;">
+        <div class="nav-location-text" id="navLocName">Select Location</div>
+        <div class="nav-location-sub" id="navLocSub">Tap to set delivery address</div>
+      </div>
+      <span class="nav-location-chevron">▾</span>
+    </button>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="javascript:void(0)" onclick="goOrders()" style="color:var(--fire);font-weight:600;" id="navOrdersLink">My Orders</a></li>
+  </ul>
+  <button onclick="goProfile()" id="avatarBtn" style="
+    width:42px;height:42px;border-radius:50%;border:2.5px solid var(--fire);
+    background:linear-gradient(135deg,#EDD9FF,#C4B5FD);
+    cursor:pointer;font-size:1.2rem;display:flex;align-items:center;
+    justify-content:center;transition:transform .2s,box-shadow .2s;
+    position:relative;flex-shrink:0;
+  " onmouseover="this.style.transform='scale(1.08)';this.style.boxShadow='0 4px 16px rgba(255,60,31,.3)'"
+     onmouseout="this.style.transform='';this.style.boxShadow=''">
+    👤
+    <span id="avatarLiveDot" style="display:none;position:absolute;top:1px;right:1px;width:10px;height:10px;border-radius:50%;background:#27AE60;border:2px solid #fff;"></span>
+  </button>
+</nav>
+
+<!-- Location Dropdown -->
+<div class="loc-dropdown" id="locDropdown">
+  <div class="loc-header">
+    <div class="loc-header-title">Deliver to</div>
+  </div>
+  <div id="locAddrList"></div>
+  <div class="loc-divider"></div>
+  <div class="loc-use-current" onclick="locUseGPS()">
+    <span>🎯</span> Use Current Location
+  </div>
+  <div class="loc-add-btn" onclick="locGoAddAddress()">
+    <span>+</span> Add New Address
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Delivering in 30 minutes or less</div>
+    <h1>Hungry? We've got <em>you covered.</em></h1>
+    <p class="hero-sub">Fresh, hot meals from the best local restaurants — delivered straight to your door. Fast, easy, delicious.</p>
+    <div class="hero-search" id="heroSearchWrap">
+      <input type="text" id="heroSearchInput" placeholder="Search food or restaurants…"
+        autocomplete="off"
+        oninput="srchOnInput(this.value)"
+        onfocus="srchOnFocus()"
+        onkeydown="srchOnKey(event)">
+      <button onclick="srchSubmit()">Find Food 🍽️</button>
+      <!-- Suggestions dropdown -->
+      <div class="search-dropdown" id="srchDropdown">
+        <div id="srchDropdownInner"></div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span class="stat-num">500+</span>
+        <div class="stat-label">Restaurants</div>
+      </div>
+      <div>
+        <span class="stat-num">30min</span>
+        <div class="stat-label">Avg. Delivery</div>
+      </div>
+      <div>
+        <span class="stat-num">4.9★</span>
+        <div class="stat-label">App Rating</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-plate">🍕</div>
+    <div class="hero-tag tag1">⚡ <span>Live Tracking</span></div>
+    <div class="hero-tag tag2">🛵 On the way!</div>
+    <div class="hero-tag tag3">⭐ 4.9 Rated</div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <div class="section-label">Browse by category</div>
+  <div class="section-title">What are you craving?</div>
+  <div class="category-grid">
+    <div class="category-card" onclick="catSearch('Pizza')"><span class="category-emoji">🍕</span><div class="category-name">Pizza</div></div>
+    <div class="category-card" onclick="catSearch('Burgers')"><span class="category-emoji">🍔</span><div class="category-name">Burgers</div></div>
+    <div class="category-card" onclick="catSearch('Mexican')"><span class="category-emoji">🌮</span><div class="category-name">Mexican</div></div>
+    <div class="category-card" onclick="catSearch('Noodles')"><span class="category-emoji">🍜</span><div class="category-name">Noodles</div></div>
+    <div class="category-card" onclick="catSearch('Sushi')"><span class="category-emoji">🍣</span><div class="category-name">Sushi</div></div>
+    <div class="category-card" onclick="catSearch('Chicken')"><span class="category-emoji">🍗</span><div class="category-name">Chicken</div></div>
+    <div class="category-card" onclick="catSearch('Salads')"><span class="category-emoji">🥗</span><div class="category-name">Salads</div></div>
+    <div class="category-card" onclick="catSearch('Desserts')"><span class="category-emoji">🍰</span><div class="category-name">Desserts</div></div>
+    <div class="category-card" onclick="catSearch('Drinks')"><span class="category-emoji">🥤</span><div class="category-name">Drinks</div></div>
+    <div class="category-card" onclick="catSearch('Wraps')"><span class="category-emoji">🥙</span><div class="category-name">Wraps</div></div>
+    <div class="category-card" onclick="catSearch('Indian')"><span class="category-emoji">🍛</span><div class="category-name">Indian</div></div>
+    <div class="category-card" onclick="catSearch('BBQ')"><span class="category-emoji">🥩</span><div class="category-name">BBQ</div></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="menu-header">
+    <div>
+      <div class="section-label">Hand-picked for you</div>
+      <div class="section-title">Featured Dishes</div>
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab active" onclick="menuFilter('all',this)">All</button>
+        <button class="tab" onclick="menuFilter('popular',this)">Popular</button>
+        <button class="tab" onclick="menuFilter('new',this)">New</button>
+        <button class="tab" onclick="menuFilter('under10',this)">Under ₹999</button>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="see-all" onclick="srchSubmit()">See all →</a>
+  </div>
+  <div class="menu-grid">
+    <div class="food-card" data-filter="all popular">
+      <div class="food-img food-img-bg3"><span class="badge-hot">🔥 Hot</span>🍛</div>
+      <div class="food-info">
+        <div class="food-name">Chicken Biryani</div>
+        <div class="food-desc">Dum-cooked basmati rice with tender chicken, kesar & whole spices</div>
+        <div class="food-footer">
+          <span class="food-price">₹249</span>
+          <div class="food-meta"><span class="meta-item">⭐ 4.9</span><span class="meta-item">🕐 35min</span></div>
+          <button class="add-btn" onclick="addToCart(this)">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="food-card" data-filter="all popular">
+      <div class="food-img food-img-bg1"><span class="badge-hot">🔥 Hot</span>🫓</div>
+      <div class="food-info">
+        <div class="food-name">Masala Dosa</div>
+        <div class="food-desc">Crispy rice crepe stuffed with spiced potato, served with sambar & chutney</div>
+        <div class="food-footer">
+          <span class="food-price">₹129</span>
+          <div class="food-meta"><span class="meta-item">⭐ 4.8</span><span class="meta-item">🕐 20min</span></div>
+          <button class="add-btn" onclick="addToCart(this)">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="food-card" data-filter="all new">
+      <div class="food-img food-img-bg5"><span class="badge-new">✨ New</span>🍢</div>
+      <div class="food-info">
+        <div class="food-name">Paneer Tikka</div>
+        <div class="food-desc">Tandoor-grilled cottage cheese with capsicum, onion & mint chutney</div>
+        <div class="food-footer">
+          <span class="food-price">₹199</span>
+          <div class="food-meta"><span class="meta-item">⭐ 4.7</span><span class="meta-item">🕐 25min</span></div>
+          <button class="add-btn" onclick="addToCart(this)">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="food-card" data-filter="all popular">
+      <div class="food-img food-img-bg2">🥘</div>
+      <div class="food-info">
+        <div class="food-name">Butter Chicken</div>
+        <div class="food-desc">Tender chicken in rich tomato-cream gravy, served with butter naan</div>
+        <div class="food-footer">
+          <span class="food-price">₹299</span>
+          <div class="food-meta"><span class="meta-item">⭐ 4.9</span><span class="meta-item">🕐 30min</span></div>
+          <button class="add-btn" onclick="addToCart(this)">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="food-card" data-filter="all new under999">
+      <div class="food-img food-img-bg4"><span class="badge-new">✨ New</span>🍱</div>
+      <div class="food-info">
+        <div class="food-name">Veg Thali</div>
+        <div class="food-desc">Dal, sabzi, roti, rice, salad, pickle & papad — full meal combo</div>
+        <div class="food-footer">
+          <span class="food-price">₹179</span>
+          <div class="food-meta"><span class="meta-item">⭐ 4.6</span><span class="meta-item">🕐 25min</span></div>
+          <button class="add-btn" onclick="addToCart(this)">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="food-card" data-filter="all under999">
+      <div class="food-img food-img-bg6">🍮</div>
+      <div class="food-info">
+        <div class="food-name">Gulab Jamun (4pc)</div>
+        <div class="food-desc">Soft milk-solid dumplings soaked in rose cardamom syrup</div>
+        <div class="food-footer">
+          <span class="food-price">₹79</span>
+          <div class="food-meta"><span class="meta-item">⭐ 4.8</span><span class="meta-item">🕐 15min</span></div>
+          <button class="add-btn" onclick="addToCart(this)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="section-label">Simple as that</div>
+  <div class="section-title">How Xoofy Works</div>
+  <div class="steps-grid">
+    <div class="step">
+      <span class="step-num">01</span>
+      <span class="step-icon">📍</span>
+      <h3>Enter Your Address</h3>
+      <p>Tell us where you are and we'll show you all restaurants delivering to your door right now.</p>
+    </div>
+    <div class="step">
+      <span class="step-num">02</span>
+      <span class="step-icon">🍽️</span>
+      <h3>Choose Your Meal</h3>
+      <p>Browse hundreds of dishes across dozens of cuisines. Filter by rating, price, or delivery time.</p>
+    </div>
+    <div class="step">
+      <span class="step-num">03</span>
+      <span class="step-icon">💳</span>
+      <h3>Pay Securely</h3>
+      <p>Fast checkout with card, Apple Pay, Google Pay, or cash on delivery — your choice.</p>
+    </div>
+    <div class="step">
+      <span class="step-num">04</span>
+      <span class="step-icon">🛵</span>
+      <h3>Track & Enjoy</h3>
+      <p>Watch your order in real-time on the map. Hot, fresh food at your door in under 30 minutes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="section-label">What people say</div>
+  <div class="section-title">Loved by thousands</div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <div class="review-text">"Fastest delivery I've ever had. Food arrived hot and exactly as ordered. The live tracking is a game changer — I knew exactly when to open the door!"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar av1">👩</div>
+        <div>
+          <div class="reviewer-name">Priya M.</div>
+          <div class="reviewer-loc">Mumbai · Regular customer</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <div class="review-text">"I order from Xoofy almost every day. The variety is insane and the app is so easy to use. Best food delivery service in the city, hands down."</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar av2">👨</div>
+        <div>
+          <div class="reviewer-name">Carlos R.</div>
+          <div class="reviewer-loc">Delhi · Premium member</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <div class="review-text">"Ordered for the whole office and it was flawless. Everyone got exactly what they wanted, it all arrived at the same time. Will definitely use again!"</div>
+      <div class="reviewer">
+        <div class="reviewer-avatar av3">👩</div>
+        <div>
+          <div class="reviewer-name">Aisha T.</div>
+          <div class="reviewer-loc">Bangalore · Business user</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RESTAURANTS -->
+<section class="restaurants-section" id="restaurants">
+  <div class="section-label">Delivering near you</div>
+  <div class="section-title" style="color:var(--dark);">Top Restaurants 🏪</div>
+  <div class="rest-grid" id="restGrid"></div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div>
+    <h2>Get ₹200 off your first order 🎉</h2>
+    <p>Use code <strong>FIRSTBITE</strong> at checkout. No minimum order required.</p>
+  </div>
+  <a href="#menu" class="cta-banner-btn">Claim Offer →</a>
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo"><span style="background:linear-gradient(135deg,#FF8C00,#F97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">X</span><span style="color:#7C3AED;">oofy</span></span>
+      <p class="footer-desc">Bringing the best local food to your door. Fast, fresh, and always delicious.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">📘</a>
+        <a href="#" class="social-btn">📸</a>
+        <a href="#" class="social-btn">🐦</a>
+        <a href="#" class="social-btn">▶️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>For You</h4>
+      <ul>
+        <li><a href="#">Order Food</a></li>
+        <li><a href="#">Xoofy Pro</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Refer a Friend</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Xoofy. All rights reserved.</p>
+    <p>Made with ❤️ for food lovers everywhere</p>
+  </div>
+</footer>
+
+<!-- FLOATING CART BUTTON -->
+<!-- TRACK ORDER FLOAT -->
+<div id="trackFloat" onclick="openTracker()" style="
+  display:none;position:fixed;bottom:5.5rem;right:2rem;z-index:99;
+  background:#27AE60;color:#fff;padding:.85rem 1.5rem;border-radius:50px;
+  display:none;align-items:center;gap:.6rem;
+  box-shadow:0 6px 24px rgba(39,174,96,0.45);
+  cursor:pointer;font-weight:600;font-size:.9rem;font-family:'DM Sans',sans-serif;
+  transition:transform .2s,box-shadow .2s;
+" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+  🛵 Track Order
+  <span id="trackEta" style="background:rgba(255,255,255,.25);padding:.15rem .55rem;border-radius:20px;font-size:.78rem;"></span>
+</div>
+
+<div class="cart-float" id="cartFloat" style="display:none;" onclick="openCart()">
+  🛒 View Cart
+  <div class="cart-count" id="cartCount">0</div>
+</div>
+
+<!-- CART DRAWER OVERLAY -->
+<div id="cartOverlay" onclick="closeCart()" style="
+  display:none; position:fixed; inset:0; background:rgba(0,0,0,0.45);
+  z-index:200; backdrop-filter:blur(3px);
+"></div>
+
+<!-- CART DRAWER -->
+<div id="cartDrawer" style="
+  display:none; position:fixed; top:0; right:0; bottom:0;
+  width:min(420px,100vw); background:#fff; z-index:201;
+  box-shadow:-8px 0 40px rgba(0,0,0,0.18);
+  flex-direction:column; font-family:'DM Sans',sans-serif;
+  transform:translateX(100%); transition:transform 0.35s cubic-bezier(.4,0,.2,1);
+">
+  <!-- Header -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:1.5rem 1.5rem 1rem;border-bottom:1px solid #f0e8de;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#1A0A00;">Your Cart 🛒</div>
+    <button onclick="closeCart()" style="background:none;border:none;font-size:1.6rem;cursor:pointer;color:#6B4F3A;line-height:1;">×</button>
+  </div>
+
+  <!-- Items -->
+  <div id="cartItems" style="flex:1;overflow-y:auto;padding:1rem 1.5rem;"></div>
+
+  <!-- Empty state -->
+  <div id="cartEmpty" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#C4A882;padding:2rem;text-align:center;">
+    <div style="font-size:4rem;margin-bottom:1rem;">🍽️</div>
+    <div style="font-size:1.1rem;font-weight:600;color:#6B4F3A;">Your cart is empty</div>
+    <div style="font-size:0.88rem;margin-top:0.4rem;">Add some delicious items!</div>
+  </div>
+
+  <!-- Footer -->
+  <div id="cartFooter" style="display:none;padding:1.2rem 1.5rem;border-top:1px solid #f0e8de;background:#fff;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem;">
+      <span style="font-size:0.88rem;color:#6B4F3A;">Delivery fee</span>
+      <span style="font-size:0.88rem;color:#6B4F3A;">$2.99</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem;">
+      <span style="font-weight:700;font-size:1rem;color:#1A0A00;">Total</span>
+      <span id="cartTotal" style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#FF3C1F;">$0.00</span>
+    </div>
+    <button onclick="checkout()" style="
+      width:100%;background:#FF3C1F;color:#fff;border:none;
+      padding:1rem;border-radius:50px;font-size:1rem;font-weight:600;
+      cursor:pointer;font-family:'DM Sans',sans-serif;
+      transition:background 0.2s;
+    " onmouseover="this.style.background='#FF7A3D'" onmouseout="this.style.background='#FF3C1F'">
+      Place Order →
+    </button>
+    <button onclick="clearCart()" style="
+      width:100%;background:none;border:none;color:#C4A882;
+      font-size:0.82rem;margin-top:0.8rem;cursor:pointer;
+      font-family:'DM Sans',sans-serif;
+    ">Clear cart</button>
+  </div>
+</div>
+
+<!-- ORDER SUCCESS TOAST -->
+<div id="orderToast" style="
+  display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);
+  background:#1A0A00;color:#fff;padding:1rem 2rem;border-radius:50px;
+  font-size:0.95rem;font-weight:600;z-index:300;
+  box-shadow:0 8px 30px rgba(0,0,0,0.25);
+">🎉 Order placed! Delivering in ~30 min</div>
+
+<script>
+  // ── CART STATE ──────────────────────────────────────────────
+  const cart = {}; // { name: { price, qty, emoji } }
+
+  // Map food cards to data
+  const foodData = [
+    { name: 'Chicken Biryani',   price: 249, emoji: '🍛' },
+    { name: 'Masala Dosa',       price: 129, emoji: '🫓' },
+    { name: 'Paneer Tikka',      price: 199, emoji: '🍢' },
+    { name: 'Butter Chicken',    price: 299, emoji: '🥘' },
+    { name: 'Veg Thali',         price: 179, emoji: '🍱' },
+    { name: 'Gulab Jamun (4pc)', price:  79, emoji: '🍮' },
+  ];
+
+  // Attach data to each add button on load
+  window.addEventListener('DOMContentLoaded', () => {
+    // Resume tracker if user had an active order (deferred so tracker vars are ready)
+    setTimeout(function() {
+      try {
+        var saved = parseInt(localStorage.getItem('sb_order_start'));
+        if (saved && !isNaN(saved)) {
+          var elapsed = Date.now() - saved;
+          if (typeof TOTAL_MS !== 'undefined' && elapsed < TOTAL_MS) {
+            trackerStart = saved;
+            showTrackButtons();
+            canvas = document.getElementById('mapCanvas');
+            if (canvas) ctx = canvas.getContext('2d');
+            if (typeof renderAll === 'function') renderAll();
+          } else {
+            localStorage.removeItem('sb_order_start');
+          }
+        }
+      } catch(e){}
+    }, 100);
+    document.querySelectorAll('.add-btn').forEach((btn, i) => {
+      const d = foodData[i];
+      if (d) {
+        btn.dataset.name  = d.name;
+        btn.dataset.price = d.price;
+        btn.dataset.emoji = d.emoji;
+        btn.onclick = () => addToCart(btn);
+      }
+    });
+
+    // Tab switching handled by menuFilter() onclick
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.food-card, .step, .review-card, .category-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  });
+
+  // ── ADD TO CART ─────────────────────────────────────────────
+  function addToCart(btn) {
+    const name  = btn.dataset.name;
+    const price = parseFloat(btn.dataset.price);
+    const emoji = btn.dataset.emoji;
+
+    if (cart[name]) {
+      cart[name].qty++;
+    } else {
+      cart[name] = { price, qty: 1, emoji };
+    }
+
+    updateCartUI();
+    renderCardStepper(btn, name);
+    document.getElementById('cartFloat').style.display = 'flex';
+  }
+
+  // Render inline stepper on a food card
+  function renderCardStepper(btn, name) {
+    const footer = btn.closest('.food-footer');
+    if (!footer) return;
+
+    const qty = cart[name] ? cart[name].qty : 0;
+
+    if (qty === 0) {
+      // Restore original + button
+      footer.querySelector('.card-stepper')?.remove();
+      btn.style.display = 'flex';
+      return;
+    }
+
+    // Hide original + button, show stepper
+    btn.style.display = 'none';
+
+    let stepper = footer.querySelector('.card-stepper');
+    if (!stepper) {
+      stepper = document.createElement('div');
+      stepper.className = 'card-stepper';
+      stepper.style.cssText = 'display:flex;align-items:center;gap:6px;';
+      footer.appendChild(stepper);
+    }
+
+    stepper.innerHTML =
+      '<button onclick="cardDecrement(this,\'' + name + '\')" style="width:32px;height:32px;border-radius:50%;border:2px solid var(--fire);background:transparent;color:var(--fire);font-size:1.25rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;-webkit-tap-highlight-color:transparent;">−</button>' +
+      '<span style="font-weight:800;font-size:1rem;min-width:20px;text-align:center;color:var(--dark);">' + qty + '</span>' +
+      '<button onclick="cardIncrement(this,\'' + name + '\')" style="width:32px;height:32px;border-radius:50%;border:none;background:var(--fire);color:#fff;font-size:1.25rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;box-shadow:0 3px 10px rgba(124,58,237,0.4);-webkit-tap-highlight-color:transparent;">+</button>';
+  }
+
+  function cardIncrement(btn, name) {
+    if (!cart[name]) return;
+    cart[name].qty++;
+    updateCartUI();
+    // update qty display
+    const span = btn.previousElementSibling;
+    if (span) span.textContent = cart[name].qty;
+  }
+
+  function cardDecrement(btn, name) {
+    if (!cart[name]) return;
+    cart[name].qty--;
+    if (cart[name].qty <= 0) {
+      delete cart[name];
+      // restore original + button
+      const stepper = btn.closest('.card-stepper');
+      if (stepper) {
+        const footer = stepper.parentElement;
+        stepper.remove();
+        const addBtn = footer.querySelector('.add-btn');
+        if (addBtn) addBtn.style.display = 'flex';
+      }
+    } else {
+      const span = btn.nextElementSibling;
+      if (span) span.textContent = cart[name].qty;
+    }
+    updateCartUI();
+    if (Object.keys(cart).length === 0) {
+      document.getElementById('cartFloat').style.display = 'none';
+    }
+  }
+
+  // ── MENU FILTER ─────────────────────────────────────────────
+  function menuFilter(filter, btn) {
+    // Update active tab
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Show/hide food cards
+    document.querySelectorAll('.food-card[data-filter]').forEach(card => {
+      const filters = card.dataset.filter || 'all';
+      if (filter === 'all' || filters.includes(filter)) {
+        card.style.display = '';
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  // ── UPDATE UI ───────────────────────────────────────────────
+  function updateCartUI() {
+    const totalQty = Object.values(cart).reduce((s, i) => s + i.qty, 0);
+    const totalPrice = Object.values(cart).reduce((s, i) => s + i.price * i.qty, 0);
+
+    document.getElementById('cartCount').textContent = totalQty;
+
+    const itemsEl  = document.getElementById('cartItems');
+    const emptyEl  = document.getElementById('cartEmpty');
+    const footerEl = document.getElementById('cartFooter');
+    const totalEl  = document.getElementById('cartTotal');
+
+    if (totalQty === 0) {
+      itemsEl.innerHTML = '';
+      emptyEl.style.display = 'flex';
+      footerEl.style.display = 'none';
+      document.getElementById('cartFloat').style.display = 'none';
+      return;
+    }
+    // Sync card steppers with cart state
+    document.querySelectorAll('.add-btn[data-name]').forEach(btn => {
+      const n = btn.dataset.name;
+      if (cart[n] && cart[n].qty > 0) {
+        renderCardStepper(btn, n);
+      } else {
+        // Remove stepper, restore + btn
+        const footer = btn.closest('.food-footer');
+        if (footer) {
+          footer.querySelector('.card-stepper')?.remove();
+        }
+        btn.style.display = 'flex';
+      }
+    });
+
+    emptyEl.style.display = 'none';
+    footerEl.style.display = 'block';
+    totalEl.textContent = '₹' + (totalPrice + 49).toLocaleString('en-IN');
+
+    itemsEl.innerHTML = Object.entries(cart).map(([name, item]) => `
+      <div style="display:flex;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid #f5ede3;">
+        <div style="font-size:2rem;width:50px;height:50px;background:#F5F0FF;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">${item.emoji}</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-weight:600;font-size:0.9rem;color:var(--dark);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${name}</div>
+          <div style="font-size:0.8rem;color:var(--smoke);margin-top:0.2rem;">$${item.price.toFixed(2)} each</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.65rem;flex-shrink:0;">
+          <button onclick="changeQty('${name}',-1)" style="width:34px;height:34px;border-radius:50%;border:2px solid var(--fire);background:transparent;color:var(--fire);font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:700;line-height:1;transition:all .15s;" onmousedown="this.style.background='rgba(124,58,237,0.1)'" onmouseup="this.style.background='transparent'" ontouchstart="this.style.background='rgba(124,58,237,0.1)'" ontouchend="this.style.background='transparent'">−</button>
+          <span style="font-weight:800;font-size:1.05rem;min-width:22px;text-align:center;color:var(--dark);">${item.qty}</span>
+          <button onclick="changeQty('${name}',1)" style="width:34px;height:34px;border-radius:50%;border:none;background:var(--fire);color:#fff;font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:700;line-height:1;box-shadow:0 4px 12px rgba(124,58,237,0.35);transition:all .15s;" onmousedown="this.style.transform='scale(0.92)'" onmouseup="this.style.transform='scale(1)'" ontouchstart="this.style.transform='scale(0.92)'" ontouchend="this.style.transform='scale(1)'">+</button>
+        </div>
+        <div style="font-weight:700;color:var(--fire);font-size:1rem;flex-shrink:0;min-width:52px;text-align:right;">$${(item.price*item.qty).toFixed(2)}</div>
+      </div>
+    `).join('');
+  }
+
+  // ── CHANGE QTY ──────────────────────────────────────────────
+  function changeQty(name, delta) {
+    if (!cart[name]) return;
+    cart[name].qty += delta;
+    if (cart[name].qty <= 0) delete cart[name];
+    updateCartUI();
+  }
+
+  // ── OPEN / CLOSE CART ───────────────────────────────────────
+  function openCart() {
+    const drawer  = document.getElementById('cartDrawer');
+    const overlay = document.getElementById('cartOverlay');
+    drawer.style.display  = 'flex';
+    overlay.style.display = 'block';
+    requestAnimationFrame(() => { drawer.style.transform = 'translateX(0)'; });
+  }
+
+  function closeCart() {
+    const drawer  = document.getElementById('cartDrawer');
+    const overlay = document.getElementById('cartOverlay');
+    drawer.style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      drawer.style.display  = 'none';
+      overlay.style.display = 'none';
+    }, 350);
+  }
+
+  // ── CLEAR CART ──────────────────────────────────────────────
+  function clearCart() {
+    Object.keys(cart).forEach(k => delete cart[k]);
+    // Remove all card steppers, restore + buttons
+    document.querySelectorAll('.card-stepper').forEach(s => s.remove());
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.style.display = 'flex';
+    });
+    updateCartUI();
+    closeCart();
+  }
+
+  // ── CHECKOUT ────────────────────────────────────────────────
+  function checkout() {
+    closeCart();
+    clearCart();
+    // Persist order start time + items so orders page can display them
+    const startTime = Date.now();
+    try {
+      localStorage.setItem('sb_order_start', startTime);
+      // Save cart items snapshot for orders page
+      const cartSnap = Object.entries(cart).map(([name,item])=>({name,qty:item.qty,emoji:item.emoji}));
+      localStorage.setItem('sb_active_items', JSON.stringify(cartSnap));
+    } catch(e){}
+    setTimeout(() => openTracker(), 400);
+  }
+
+  // ═══════════════════════════════════════════════════════════
+  //  LIVE ORDER TRACKER  — canvas map + real countdown timer
+  // ═══════════════════════════════════════════════════════════
+  const TOTAL_MS = 28 * 60 * 1000;   // 28 minutes total
+  let trackerStart = null;            // Date.now() when order placed
+  let timerRAF     = null;            // requestAnimationFrame handle
+  let mapRAF       = null;
+  let canvas, ctx;
+
+  // Stage thresholds as fractions of total time (0–1)
+  const STAGES = [
+    { frac: 0.00, icon:'🧾', label:'Order Confirmed',  desc:'Restaurant received your order' },
+    { frac: 0.08, icon:'👨‍🍳', label:'Preparing Food',   desc:'Chef is cooking your meal'      },
+    { frac: 0.22, icon:'📦', label:'Ready for Pickup', desc:'Rider is heading to restaurant'  },
+    { frac: 0.40, icon:'🛵', label:'Out for Delivery', desc:'Rider is on the way to you'      },
+    { frac: 0.90, icon:'🏠', label:'Delivered! 🎉',    desc:'Your food has arrived. Enjoy!'   },
+  ];
+
+  // Route path: normalised (0–1) coordinates → mapped onto canvas
+  // These follow realistic road turns
+  const ROUTE = [
+    [0.13, 0.88], // restaurant
+    [0.13, 0.55], // turn north
+    [0.28, 0.55], // turn east
+    [0.28, 0.33], // turn north
+    [0.50, 0.33], // turn east
+    [0.50, 0.55], // turn south
+    [0.72, 0.55], // turn east
+    [0.72, 0.33], // turn north
+    [0.86, 0.33], // you
+  ];
+
+  function openTracker() {
+    // Restore saved start time so tracker resumes from where it left off
+    let savedStart = null;
+    try { savedStart = parseInt(localStorage.getItem('sb_order_start')); } catch(e){}
+    if (!savedStart || isNaN(savedStart)) savedStart = Date.now();
+
+    // Don't restart if already tracking (just reopen modal)
+    if (!trackerStart) trackerStart = savedStart;
+
+    const elapsed = Date.now() - trackerStart;
+    // Order already done
+    if (elapsed >= TOTAL_MS) {
+      alert("Your order was delivered! Thank you for ordering from Xoofy 🎉");
+      hideTrackButtons();
+      try { localStorage.removeItem('sb_order_start'); } catch(e){}
+      return;
+    }
+
+    const modal = document.getElementById('trackerModal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    canvas = document.getElementById('mapCanvas');
+    ctx    = canvas.getContext('2d');
+
+    cancelAnimationFrame(timerRAF);
+    cancelAnimationFrame(mapRAF);
+
+    showTrackButtons();
+    renderAll();
+  }
+
+  function showTrackButtons() {
+    // Show green dot on avatar to indicate live order
+    const dot = document.getElementById('avatarLiveDot');
+    if (dot) dot.style.display = 'block';
+    updateEtaBadge();
+  }
+
+  function hideTrackButtons() {
+    const dot = document.getElementById('avatarLiveDot');
+    if (dot) dot.style.display = 'none';
+    trackerStart = null;
+  }
+
+  function updateEtaBadge() {
+    if (!trackerStart) return;
+    const msLeft = Math.max(TOTAL_MS - (Date.now() - trackerStart), 0);
+    const m = Math.ceil(msLeft / 60000);
+    const eta = document.getElementById('trackEta');
+    if (eta) eta.textContent = m + ' min';
+    if (msLeft > 0) setTimeout(updateEtaBadge, 15000);
+  }
+
+  function closeTracker() {
+    document.getElementById('trackerModal').style.display = 'none';
+    document.body.style.overflow = '';
+    // Keep timer running in background — user can reopen via Track Order button
+    // cancelAnimationFrame intentionally NOT called here
+  }
+
+  // Master render loop — called every frame
+  function renderAll() {
+    const elapsed = Date.now() - trackerStart;
+    const prog    = Math.min(elapsed / TOTAL_MS, 1); // 0 → 1
+
+    drawTimer(prog);
+    drawMap(prog);
+    updateStageUI(prog);
+
+    if (prog < 1) {
+      timerRAF = requestAnimationFrame(renderAll);
+    } else {
+      // delivered!
+      document.getElementById('stageLabel').textContent = '🏠 Delivered!';
+      document.getElementById('stageDesc').textContent  = 'Your food has arrived. Enjoy!';
+    }
+  }
+
+  // ── COUNTDOWN TIMER ─────────────────────────────────────────
+  function drawTimer(prog) {
+    const msLeft   = Math.max(TOTAL_MS - (Date.now() - trackerStart), 0);
+    const m        = Math.floor(msLeft / 60000);
+    const s        = Math.floor((msLeft % 60000) / 1000);
+    document.getElementById('timerText').textContent =
+      String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+
+    // SVG ring: circumference of r=54 is 339.29
+    const circ = 2 * Math.PI * 54;
+    const offset = circ * (1 - prog);   // drains as prog grows
+    document.getElementById('timerRing').style.strokeDashoffset = offset;
+
+    // Colour: green → orange → red
+    let r, g;
+    if (prog < 0.5) { r = Math.round(255 * prog * 2); g = 180; }
+    else            { r = 255; g = Math.round(180 * (1 - (prog - 0.5) * 2)); }
+    document.getElementById('timerRing').style.stroke = `rgb(${r},${g},40)`;
+  }
+
+  // ── CANVAS MAP ──────────────────────────────────────────────
+  function drawMap(prog) {
+    const W = canvas.width;
+    const H = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+
+    // Convert normalised route to pixel coords
+    const pts = ROUTE.map(([nx, ny]) => ({ x: nx * W, y: ny * H }));
+
+    // Total route length for positioning rider
+    const segLengths = [];
+    let totalLen = 0;
+    for (let i = 1; i < pts.length; i++) {
+      const dx = pts[i].x - pts[i-1].x;
+      const dy = pts[i].y - pts[i-1].y;
+      const l  = Math.hypot(dx, dy);
+      segLengths.push(l);
+      totalLen += l;
+    }
+
+    // Rider starts moving only after stage 3 (frac 0.40)
+    const MOVE_START = 0.40;
+    const moveProg = prog < MOVE_START ? 0 : (prog - MOVE_START) / (1 - MOVE_START);
+    const riderDist = moveProg * totalLen;
+
+    // Find rider position along path
+    let riderPt = { x: pts[0].x, y: pts[0].y };
+    let riderAngle = 0;
+    let distSoFar = 0;
+    let trailEnd  = 0; // index up to which trail is drawn
+    for (let i = 0; i < segLengths.length; i++) {
+      if (distSoFar + segLengths[i] >= riderDist) {
+        const t  = (riderDist - distSoFar) / segLengths[i];
+        riderPt  = {
+          x: pts[i].x + t * (pts[i+1].x - pts[i].x),
+          y: pts[i].y + t * (pts[i+1].y - pts[i].y),
+        };
+        riderAngle = Math.atan2(pts[i+1].y - pts[i].y, pts[i+1].x - pts[i].x);
+        trailEnd   = i;
+        break;
+      }
+      distSoFar += segLengths[i];
+      trailEnd   = i + 1;
+    }
+
+    // ── Draw map background
+    ctx.fillStyle = '#EDF4ED';
+    ctx.fillRect(0, 0, W, H);
+
+    // Grid roads (horizontal + vertical)
+    const roads = [
+      { x1:0, y1:0.33*H, x2:W, y2:0.33*H },
+      { x1:0, y1:0.55*H, x2:W, y2:0.55*H },
+      { x1:0, y1:0.75*H, x2:W, y2:0.75*H },
+      { x1:0.13*W, y1:0, x2:0.13*W, y2:H },
+      { x1:0.28*W, y1:0, x2:0.28*W, y2:H },
+      { x1:0.50*W, y1:0, x2:0.50*W, y2:H },
+      { x1:0.72*W, y1:0, x2:0.72*W, y2:H },
+      { x1:0.86*W, y1:0, x2:0.86*W, y2:H },
+    ];
+    ctx.strokeStyle = '#D0E8D0';
+    ctx.lineWidth   = 14;
+    ctx.lineCap     = 'square';
+    roads.forEach(r => {
+      ctx.beginPath(); ctx.moveTo(r.x1,r.y1); ctx.lineTo(r.x2,r.y2); ctx.stroke();
+    });
+
+    // Road centre dashes (white)
+    ctx.strokeStyle = 'rgba(255,255,255,0.6)';
+    ctx.lineWidth   = 2;
+    ctx.setLineDash([12, 10]);
+    roads.forEach(r => {
+      ctx.beginPath(); ctx.moveTo(r.x1,r.y1); ctx.lineTo(r.x2,r.y2); ctx.stroke();
+    });
+    ctx.setLineDash([]);
+
+    // ── Buildings (simple blocks)
+    const blocks = [
+      [0.16,0.36,0.09,0.15],[0.33,0.36,0.14,0.15],[0.55,0.36,0.12,0.15],
+      [0.16,0.58,0.08,0.13],[0.33,0.58,0.14,0.13],[0.55,0.58,0.12,0.13],
+      [0.75,0.36,0.08,0.15],[0.75,0.58,0.08,0.13],
+    ];
+    blocks.forEach(([bx,by,bw,bh]) => {
+      ctx.fillStyle = '#C2D9B0';
+      ctx.beginPath();
+      ctx.beginPath();
+      var rx=bx*W,ry=by*H,rw=bw*W,rh=bh*H,rad=4;
+      ctx.moveTo(rx+rad,ry);ctx.lineTo(rx+rw-rad,ry);ctx.arcTo(rx+rw,ry,rx+rw,ry+rad,rad);
+      ctx.lineTo(rx+rw,ry+rh-rad);ctx.arcTo(rx+rw,ry+rh,rx+rw-rad,ry+rh,rad);
+      ctx.lineTo(rx+rad,ry+rh);ctx.arcTo(rx,ry+rh,rx,ry+rh-rad,rad);
+      ctx.lineTo(rx,ry+rad);ctx.arcTo(rx,ry,rx+rad,ry,rad);ctx.closePath();
+      ctx.fill();
+      ctx.fillStyle = '#B0CB9E';
+      ctx.fillRect(bx*W+4, by*H+4, 8, 8); // window hint
+    });
+
+    // ── Dashed full route (ghost)
+    ctx.strokeStyle = 'rgba(255,60,31,0.25)';
+    ctx.lineWidth   = 3;
+    ctx.setLineDash([7, 6]);
+    ctx.lineCap     = 'round';
+    ctx.lineJoin    = 'round';
+    ctx.beginPath();
+    pts.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // ── Trail (travelled portion)
+    if (moveProg > 0) {
+      ctx.strokeStyle = '#FF3C1F';
+      ctx.lineWidth   = 4;
+      ctx.lineCap     = 'round';
+      ctx.lineJoin    = 'round';
+      ctx.beginPath();
+      pts.slice(0, trailEnd + 1).forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+      ctx.lineTo(riderPt.x, riderPt.y);
+      ctx.stroke();
+    }
+
+    // ── Restaurant pin
+    drawPin(ctx, pts[0].x, pts[0].y, '#FF3C1F', '🍕', 'Restaurant');
+
+    // ── You pin
+    drawPin(ctx, pts[pts.length-1].x, pts[pts.length-1].y, '#27AE60', '🏠', 'You');
+
+    // ── Rider icon (moves along path)
+    if (moveProg > 0 && moveProg < 1) {
+      ctx.save();
+      ctx.translate(riderPt.x, riderPt.y);
+
+      // Glow
+      ctx.shadowColor = 'rgba(255,60,31,0.5)';
+      ctx.shadowBlur  = 14;
+      ctx.fillStyle   = '#FF3C1F';
+      ctx.beginPath();
+      ctx.arc(0, 0, 13, 0, Math.PI*2);
+      ctx.fill();
+
+      // White ring
+      ctx.shadowBlur  = 0;
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth   = 3;
+      ctx.stroke();
+
+      // Direction arrow
+      ctx.rotate(riderAngle);
+      ctx.fillStyle   = '#fff';
+      ctx.font        = 'bold 11px sans-serif';
+      ctx.textAlign   = 'center';
+      ctx.textBaseline= 'middle';
+      ctx.fillText('▶', 1, 0);
+
+      ctx.restore();
+    }
+
+    // ── Delivered state: show checkmark at destination
+    if (moveProg >= 1) {
+      const last = pts[pts.length - 1];
+      ctx.fillStyle = '#27AE60';
+      ctx.shadowColor = 'rgba(39,174,96,0.4)';
+      ctx.shadowBlur  = 16;
+      ctx.beginPath();
+      ctx.arc(last.x, last.y, 16, 0, Math.PI*2);
+      ctx.fill();
+      ctx.shadowBlur = 0;
+      ctx.fillStyle  = '#fff';
+      ctx.font       = 'bold 14px sans-serif';
+      ctx.textAlign  = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('✓', last.x, last.y);
+    }
+  }
+
+  function drawPin(ctx, x, y, color, emoji, label) {
+    // Shadow
+    ctx.fillStyle = 'rgba(0,0,0,0.18)';
+    ctx.beginPath();
+    ctx.ellipse(x, y + 22, 8, 4, 0, 0, Math.PI*2);
+    ctx.fill();
+
+    // Circle
+    ctx.fillStyle = color;
+    ctx.shadowColor = color;
+    ctx.shadowBlur = 10;
+    ctx.beginPath();
+    ctx.arc(x, y, 16, 0, Math.PI*2);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    // White ring
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth   = 2.5;
+    ctx.stroke();
+
+    // Emoji
+    ctx.font = '13px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(emoji, x, y);
+
+    // Label pill
+    const lw = ctx.measureText(label).width + 16;
+    ctx.fillStyle = 'rgba(20,10,0,0.7)';
+    ctx.beginPath();
+    var rx2=x-lw/2,ry2=y+22,rr=8;
+      ctx.moveTo(rx2+rr,ry2);ctx.lineTo(rx2+lw-rr,ry2);ctx.arcTo(rx2+lw,ry2,rx2+lw,ry2+rr,rr);
+      ctx.lineTo(rx2+lw,ry2+16-rr);ctx.arcTo(rx2+lw,ry2+16,rx2+lw-rr,ry2+16,rr);
+      ctx.lineTo(rx2+rr,ry2+16);ctx.arcTo(rx2,ry2+16,rx2,ry2+16-rr,rr);
+      ctx.lineTo(rx2,ry2+rr);ctx.arcTo(rx2,ry2,rx2+rr,ry2,rr);ctx.closePath();
+    ctx.fill();
+    ctx.fillStyle = '#fff';
+    ctx.font = '9px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(label, x, y + 30);
+  }
+
+  // ── STAGE UI ────────────────────────────────────────────────
+  let lastStageIdx = -1;
+  function updateStageUI(prog) {
+    let activeIdx = 0;
+    STAGES.forEach((s, i) => { if (prog >= s.frac) activeIdx = i; });
+
+    if (activeIdx === lastStageIdx) return; // no change
+    lastStageIdx = activeIdx;
+
+    STAGES.forEach((s, i) => {
+      const el = document.getElementById('st_' + i);
+      if (!el) return;
+      if (i < activeIdx)       el.className = 'tst done';
+      else if (i === activeIdx) el.className = 'tst active';
+      else                     el.className = 'tst pending';
+    });
+
+    document.querySelectorAll('.stline').forEach((line, i) => {
+      line.style.background = i < activeIdx ? '#27AE60' : '#f0e8de';
+    });
+
+    document.getElementById('stageLabel').textContent = STAGES[activeIdx].label;
+    document.getElementById('stageDesc').textContent  = STAGES[activeIdx].desc;
+  }
+</script>
+
+<!-- ═══════ TRACKER MODAL ═══════ -->
+<div id="trackerModal" style="display:none;position:fixed;inset:0;z-index:300;background:rgba(26,10,0,0.65);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:1rem;font-family:'DM Sans',sans-serif;">
+<div style="background:#fff;border-radius:28px;width:min(600px,100%);max-height:92vh;overflow-y:auto;box-shadow:0 24px 80px rgba(0,0,0,0.35);">
+<style>
+  @keyframes tmPop{from{opacity:0;transform:scale(0.88)}to{opacity:1;transform:scale(1)}}
+  #trackerModal > div { animation: tmPop 0.3s cubic-bezier(.34,1.4,.64,1); }
+  .tst { display:flex;align-items:center;gap:.85rem;padding:.55rem 0; }
+  .tst .tdot { width:34px;height:34px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all .4s; }
+  .tst.done    .tdot { background:#e8f5e9; }
+  .tst.active  .tdot { background:#FF3C1F;box-shadow:0 0 0 6px rgba(255,60,31,.18);animation:tpulse 1.6s infinite; }
+  .tst.pending .tdot { background:#f5ede3;opacity:.5; }
+  .tst .tlabel { font-weight:600;font-size:.88rem;color:#1A0A00; }
+  .tst.pending .tlabel { color:#C4A882; }
+  .tst .tsub   { font-size:.76rem;color:#6B4F3A; }
+  .tst.pending .tsub   { color:#C4A882; }
+  .stline { width:2px;height:16px;background:#f0e8de;margin-left:16px;transition:background .5s; }
+  @keyframes tpulse{0%,100%{box-shadow:0 0 0 6px rgba(255,60,31,.18)}50%{box-shadow:0 0 0 12px rgba(255,60,31,.07)}}
+</style>
+
+  <!-- Header -->
+  <div style="padding:1.4rem 1.5rem 0;display:flex;justify-content:space-between;align-items:center;">
+    <div>
+      <div style="font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:#1A0A00;">Live Tracking 🛵</div>
+      <div style="font-size:.8rem;color:#6B4F3A;margin-top:.15rem;">Order #SB-8821 · Updates every second</div>
+    </div>
+    <button onclick="closeTracker()" style="background:#f5ede3;border:none;width:36px;height:36px;border-radius:50%;font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#6B4F3A;">×</button>
+  </div>
+
+  <!-- Timer row -->
+  <div style="display:flex;align-items:center;gap:1.3rem;padding:1rem 1.5rem;background:#FFF8EF;margin:.9rem 1.5rem;border-radius:18px;">
+    <!-- Accurate SVG countdown ring -->
+    <svg width="78" height="78" viewBox="0 0 120 120" style="flex-shrink:0;transform:rotate(-90deg);">
+      <circle cx="60" cy="60" r="54" fill="none" stroke="#F0E0D0" stroke-width="11"/>
+      <circle id="timerRing" cx="60" cy="60" r="54" fill="none" stroke="#FF3C1F" stroke-width="11"
+        stroke-linecap="round"
+        stroke-dasharray="339.292"
+        stroke-dashoffset="0"
+        style="transition:stroke-dashoffset 0.9s linear, stroke 2s ease;"/>
+    </svg>
+    <!-- Timer text overlay (absolute inside a relative wrapper) -->
+    <div style="position:relative;margin-left:-88px;width:78px;height:78px;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;">
+      <div id="timerText" style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#1A0A00;line-height:1;">28:00</div>
+      <div style="font-size:.65rem;color:#6B4F3A;margin-top:.1rem;">min left</div>
+    </div>
+    <div style="margin-left:16px;">
+      <div id="stageLabel" style="font-weight:700;font-size:1rem;color:#1A0A00;">Order Confirmed</div>
+      <div id="stageDesc"  style="font-size:.83rem;color:#6B4F3A;margin-top:.2rem;">Restaurant received your order</div>
+    </div>
+  </div>
+
+  <!-- Canvas Map -->
+  <div style="margin:0 1.5rem;border-radius:18px;overflow:hidden;position:relative;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.06);">
+    <canvas id="mapCanvas" width="570" height="240" style="width:100%;display:block;"></canvas>
+    <div style="position:absolute;top:8px;left:10px;background:rgba(255,255,255,.92);padding:3px 10px;border-radius:20px;font-size:.72rem;font-weight:600;color:#1A0A00;box-shadow:0 2px 8px rgba(0,0,0,.1);">📍 Live Route Map</div>
+    <div style="position:absolute;bottom:8px;right:10px;background:rgba(255,255,255,.85);padding:3px 10px;border-radius:20px;font-size:.68rem;color:#6B4F3A;">🔴 Restaurant &nbsp;🟢 You</div>
+  </div>
+
+  <!-- Stage progress -->
+  <div style="padding:1rem 1.5rem .4rem;">
+    <div style="font-weight:600;font-size:.78rem;color:#6B4F3A;margin-bottom:.7rem;text-transform:uppercase;letter-spacing:.6px;">Order Progress</div>
+    <div id="st_0" class="tst active"><div class="tdot">🧾</div><div><div class="tlabel">Order Confirmed</div><div class="tsub">Restaurant received your order</div></div></div>
+    <div class="stline"></div>
+    <div id="st_1" class="tst pending"><div class="tdot">👨‍🍳</div><div><div class="tlabel">Preparing Food</div><div class="tsub">Chef is cooking your meal</div></div></div>
+    <div class="stline"></div>
+    <div id="st_2" class="tst pending"><div class="tdot">📦</div><div><div class="tlabel">Ready for Pickup</div><div class="tsub">Rider is heading to restaurant</div></div></div>
+    <div class="stline"></div>
+    <div id="st_3" class="tst pending"><div class="tdot">🛵</div><div><div class="tlabel">Out for Delivery</div><div class="tsub">Rider is on the way to you</div></div></div>
+    <div class="stline"></div>
+    <div id="st_4" class="tst pending"><div class="tdot">🏠</div><div><div class="tlabel">Delivered!</div><div class="tsub">Enjoy your meal! 🎉</div></div></div>
+  </div>
+
+  <!-- Rider card -->
+  <div style="margin:.8rem 1.5rem 1.4rem;padding:.9rem 1.1rem;background:#f9f4ef;border-radius:16px;display:flex;align-items:center;gap:.9rem;">
+    <div style="width:46px;height:46px;border-radius:50%;background:#FFE0C0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;">🧑</div>
+    <div style="flex:1;">
+      <div style="font-weight:600;font-size:.9rem;color:#1A0A00;">Rahul K. · Your Rider</div>
+      <div style="font-size:.78rem;color:#6B4F3A;">⭐ 4.9 · 1,240 deliveries · Honda Activa</div>
+    </div>
+    <a href="tel:+910000000000" style="background:#FF3C1F;color:#fff;padding:.5rem 1rem;border-radius:50px;font-size:.8rem;font-weight:600;text-decoration:none;white-space:nowrap;">📞 Call</a>
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════ ORDERS PAGE ═══════════════ -->
+<div id="ordersPage">
+<div class="op-wrap">
+
+  <div class="op-header">
+    <div class="op-title">My Orders 🧾</div>
+    <div class="op-sub">Track your active delivery and view full order history</div>
+  </div>
+
+  <div class="op-summary">
+    <div class="op-stat"><div class="op-stat-num" id="opStatTotal">0</div><div class="op-stat-label">Total Orders</div></div>
+    <div class="op-stat"><div class="op-stat-num" id="opStatSpent">$0</div><div class="op-stat-label">Amount Spent</div></div>
+    <div class="op-stat"><div class="op-stat-num" id="opStatFav">—</div><div class="op-stat-label">Favourite Item</div></div>
+  </div>
+
+  <div class="op-tabs">
+    <button class="op-tab active" id="opTabActive" onclick="opSwitchTab('active')">🛵 Active</button>
+    <button class="op-tab" id="opTabPast" onclick="opSwitchTab('past')">📋 Past Orders</button>
+  </div>
+
+  <div id="opViewActive"></div>
+  <div id="opViewPast" style="display:none;"></div>
+
+</div>
+</div>
+
+
+<script>
+// ═══════════════════════════════════════════════════════
+//  SINGLE PAGE ROUTER
+// ═══════════════════════════════════════════════════════
+
+function goHome()   {
+  // Close location dropdown if open
+  var dd = document.getElementById('locDropdown');
+  if (dd) { dd.classList.remove('open'); locDropdownOpen = false; document.removeEventListener('click', locOutsideClick); }
+  showPage('home');
+}
+
+function navLogoClick(event) {
+  event.stopPropagation(); // prevent bubbling to any parent handler
+  goHome();
+}
+
+function catSearch(category) {
+  // Set the search query to the category name
+  srchCurrentQuery = category;
+  srchActiveFilter = category;
+  // Update hero search input for visual feedback
+  var inp = document.getElementById('heroSearchInput');
+  if (inp) inp.value = category;
+  // Open the search results page with this category pre-filtered
+  var page = document.getElementById('searchResultsPage');
+  var srpInp = document.getElementById('srpInput');
+  if (page) page.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (srpInp) srpInp.value = category;
+  srchRunSearch('');  // show all, but with category filter active
+}
+function goOrders() { showPage('orders'); }
+function goProfile(){ showPage('profile'); }
+
+function showPage(page) {
+  const homeEls   = document.querySelectorAll('section, .cta-banner, footer');
+  const ordersEl  = document.getElementById('ordersPage');
+  const profileEl = document.getElementById('profilePage');
+  // hide all pages first
+  homeEls.forEach(el => el.style.display = 'none');
+  ordersEl.style.display  = 'none';
+  profileEl.style.display = 'none';
+
+  if (page === 'orders') {
+    ordersEl.style.display = 'block';
+    window.scrollTo({top:0,behavior:'smooth'});
+    opRenderStats(); opRenderActive(); opRenderPast();
+  } else if (page === 'profile') {
+    profileEl.style.display = 'block';
+    window.scrollTo({top:0,behavior:'smooth'});
+    pfRender();
+  } else {
+    // home
+    homeEls.forEach(el => el.style.display = '');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+//  ORDERS PAGE LOGIC
+// ═══════════════════════════════════════════════════════
+const OP_TOTAL_MS = 28 * 60 * 1000;
+let opActiveRAF = null;
+
+const OP_STAGES = [
+  { icon:'🧾', label:'Confirmed',  frac:0.00 },
+  { icon:'👨‍🍳', label:'Preparing', frac:0.08 },
+  { icon:'📦', label:'Pickup',     frac:0.22 },
+  { icon:'🛵', label:'On Way',     frac:0.40 },
+  { icon:'🏠', label:'Delivered',  frac:0.90 },
+];
+
+const OP_DEMO_PAST = [
+  { id:'SB-8810', date: Date.now()-2*86400000, restaurant:'The Pizza House', emoji:'🍕', status:'delivered',
+    items:[{name:'Margherita Supreme',qty:2,price:12.99},{name:'Lava Chocolate Cake',qty:1,price:7.99}], delivery:2.99, total:36.96 },
+  { id:'SB-8790', date: Date.now()-5*86400000, restaurant:'Burger Republic',  emoji:'🍔', status:'delivered',
+    items:[{name:'Smash Double Burger',qty:1,price:14.99},{name:'Avocado Crunch Bowl',qty:1,price:9.49}], delivery:2.99, total:27.47 },
+  { id:'SB-8755', date: Date.now()-9*86400000, restaurant:'Ramen Lab',        emoji:'🍜', status:'delivered',
+    items:[{name:'Spicy Ramen Bowl',qty:2,price:13.50},{name:'Street Tacos (3pc)',qty:1,price:10.99}], delivery:2.99, total:40.98 },
+  { id:'SB-8731', date: Date.now()-14*86400000,restaurant:'Green Bowl Co.',   emoji:'🥗', status:'cancelled',
+    items:[{name:'Avocado Crunch Bowl',qty:1,price:9.49}], delivery:2.99, total:12.48 },
+  { id:'SB-8700', date: Date.now()-21*86400000,restaurant:'Taco Street',      emoji:'🌮', status:'delivered',
+    items:[{name:'Street Tacos (3pc)',qty:3,price:10.99},{name:'Lava Chocolate Cake',qty:2,price:7.99}], delivery:2.99, total:51.94 },
+];
+
+function opGetActive() {
+  try {
+    const start = parseInt(localStorage.getItem('sb_order_start'));
+    const items = JSON.parse(localStorage.getItem('sb_active_items') || 'null');
+    if (!start || isNaN(start) || Date.now()-start >= OP_TOTAL_MS) return null;
+    return { start, items: items || [{name:'Your Order',qty:1,emoji:'🍽️'}] };
+  } catch(e) { return null; }
+}
+
+function opGetPast() {
+  try {
+    const stored = JSON.parse(localStorage.getItem('sb_past_orders') || '[]');
+    return [...stored, ...OP_DEMO_PAST];
+  } catch(e) { return OP_DEMO_PAST; }
+}
+
+function opSwitchTab(tab) {
+  document.getElementById('opTabActive').classList.toggle('active', tab==='active');
+  document.getElementById('opTabPast').classList.toggle('active',   tab==='past');
+  document.getElementById('opViewActive').style.display = tab==='active' ? '' : 'none';
+  document.getElementById('opViewPast').style.display   = tab==='past'   ? '' : 'none';
+}
+
+function opRenderStats() {
+  const past = opGetPast();
+  const delivered = past.filter(o=>o.status==='delivered');
+  const total = past.length + (opGetActive() ? 1 : 0);
+  const spent = delivered.reduce((s,o)=>s+o.total, 0);
+  const freq  = {};
+  delivered.forEach(o=>o.items.forEach(it=>{ freq[it.name]=(freq[it.name]||0)+it.qty; }));
+  const fav = Object.entries(freq).sort((a,b)=>b[1]-a[1])[0];
+  document.getElementById('opStatTotal').textContent = total;
+  document.getElementById('opStatSpent').textContent = '$'+spent.toFixed(0);
+  document.getElementById('opStatFav').textContent   = fav ? fav[0].split(' ')[0] : '—';
+}
+
+function opRenderActive() {
+  cancelAnimationFrame(opActiveRAF);
+  const wrap  = document.getElementById('opViewActive');
+  const order = opGetActive();
+
+  if (!order) {
+    wrap.innerHTML = '<div class="op-empty"><span class="op-empty-icon">🛵</span><div class="op-empty-title">No active order right now</div><div class="op-empty-sub" style="margin:.4rem 0 1.2rem;">Your live delivery will appear here</div><button class="aoc-btn aoc-btn-primary" onclick="goHome()">Order Now &rarr;</button></div>';
+    return;
+  }
+
+  const elapsed = Date.now() - order.start;
+  const prog    = Math.min(elapsed / OP_TOTAL_MS, 1);
+  const msLeft  = Math.max(OP_TOTAL_MS - elapsed, 0);
+  const mLeft   = Math.ceil(msLeft / 60000);
+  const sLeft   = Math.floor((msLeft % 60000) / 1000);
+
+  let stageIdx = 0;
+  OP_STAGES.forEach((s,i)=>{ if(prog>=s.frac) stageIdx=i; });
+
+  const fillPct = Math.min(prog/0.90,1)*100;
+  const circ    = 2*Math.PI*23;
+  const offset  = circ*(1-prog);
+  const ringColor = prog>0.7 ? '#e67e22' : '#FF3C1F';
+
+  const itemTagsHtml = order.items.map(it=>
+    '<span class="item-tag">'+(it.emoji||'🍽️')+' '+it.name+(it.qty>1?' x'+it.qty:'')+'</span>'
+  ).join('');
+
+  const stepsHtml = OP_STAGES.map((s,i)=>
+    '<div class="pstep '+(i<stageIdx?'done':i===stageIdx?'cur':'')+'">'+
+    '<div class="pstep-dot">'+(i<stageIdx?'✓':s.icon)+'</div>'+
+    '<div class="pstep-lbl">'+s.label+'</div></div>'
+  ).join('');
+
+  wrap.innerHTML =
+    '<div class="active-order-card">'+
+      '<div class="aoc-header">'+
+        '<div><div style="color:rgba(255,255,255,.75);font-size:.72rem;margin-bottom:.15rem;">Order #SB-8821</div>'+
+        '<div style="color:#fff;font-weight:700;font-size:1rem;">Xoofy Restaurant</div></div>'+
+        '<div class="live-badge"><span class="live-dot"></span>LIVE</div>'+
+      '</div>'+
+      '<div class="aoc-body">'+
+        '<div class="eta-row">'+
+          '<div class="eta-ring">'+
+            '<svg width="54" height="54" viewBox="0 0 54 54" style="transform:rotate(-90deg);">'+
+              '<circle cx="27" cy="27" r="23" fill="none" stroke="#f0e8de" stroke-width="5"/>'+
+              '<circle cx="27" cy="27" r="23" fill="none" stroke="'+ringColor+'" stroke-width="5" stroke-linecap="round" stroke-dasharray="'+circ.toFixed(2)+'" stroke-dashoffset="'+offset.toFixed(2)+'" style="transition:stroke-dashoffset .9s linear;"/>'+
+            '</svg>'+
+            '<div class="eta-txt">'+mLeft+'<span class="eta-unit">min</span></div>'+
+          '</div>'+
+          '<div>'+
+            '<div style="font-weight:700;font-size:.98rem;color:var(--dark);">'+OP_STAGES[stageIdx].icon+' '+OP_STAGES[stageIdx].label+'</div>'+
+            '<div style="font-size:.8rem;color:var(--smoke);margin-top:.18rem;">'+(stageIdx<OP_STAGES.length-1?'Next: '+OP_STAGES[stageIdx+1].label:'🎉 Arriving now!')+'</div>'+
+            '<div style="font-size:.75rem;color:var(--light-smoke);margin-top:.12rem;">Rider: Rahul K. ⭐ 4.9</div>'+
+          '</div>'+
+          '<div style="margin-left:auto;font-family:serif;font-size:1.3rem;font-weight:700;color:var(--dark);">'+String(mLeft).padStart(2,'0')+':'+String(sLeft).padStart(2,'0')+'</div>'+
+        '</div>'+
+        '<div class="pbar-wrap"><div class="pbar-steps"><div class="pbar-fill" style="width:'+fillPct+'%;"></div>'+stepsHtml+'</div></div>'+
+        '<div class="item-tags">'+itemTagsHtml+'</div>'+
+        '<div class="chips-row">'+
+          '<span class="chip">🕐 Placed '+opTimeAgo(order.start)+'</span>'+
+          '<span class="chip">📍 Delivering to you</span>'+
+          '<span class="chip">⏱ '+mLeft+' min '+String(sLeft).padStart(2,'0')+'s left</span>'+
+        '</div>'+
+        '<div class="aoc-actions">'+
+          '<button class="aoc-btn aoc-btn-primary" onclick="openTracker()">🗺️ Live Map</button>'+
+          '<a href="tel:+910000000000" class="aoc-btn aoc-btn-outline">📞 Call Rider</a>'+
+          '<button class="aoc-btn aoc-btn-outline" onclick="opConfirmCancel()">✕ Cancel</button>'+
+        '</div>'+
+      '</div>'+
+    '</div>';
+
+  opActiveRAF = requestAnimationFrame(function(){ setTimeout(opRenderActive, 1000); });
+}
+
+function opConfirmCancel() { if(confirm("Cancel this order?")) opCancelActive(); }
+function opCancelActive() {
+  try { localStorage.removeItem('sb_order_start'); } catch(e){}
+  opRenderActive(); opRenderStats();
+}
+
+function opRenderPast() {
+  var list   = document.getElementById('opViewPast');
+  var orders = opGetPast();
+  if (!orders.length) {
+    list.innerHTML = '<div class="op-empty"><span class="op-empty-icon">📋</span><div class="op-empty-title">No past orders yet</div><button class="aoc-btn aoc-btn-primary" style="margin-top:1rem;" onclick="goHome()">Place First Order &rarr;</button></div>';
+    return;
+  }
+  var html = '';
+  for (var idx = 0; idx < orders.length; idx++) {
+    var o = orders[idx];
+    var itemsHtml = '';
+    for (var j = 0; j < o.items.length; j++) {
+      var it = o.items[j];
+      itemsHtml += '<div class="pc-item"><span class="pc-item-n">' + it.name + ' x ' + it.qty + '</span><span class="pc-item-p">$' + (it.price * it.qty).toFixed(2) + '</span></div>';
+    }
+    itemsHtml += '<div class="pc-item"><span class="pc-item-n" style="color:var(--light-smoke);">Delivery fee</span><span class="pc-item-p">$' + o.delivery.toFixed(2) + '</span></div>';
+    var reorderBtn = o.status === 'delivered' ? '<button class="reorder-btn" onclick="opReorder(' + idx + ')">🔁 Reorder Same Items</button>' : '';
+    var statusCls  = o.status === 'delivered' ? 'st-delivered' : 'st-cancelled';
+    var statusTxt  = o.status === 'delivered' ? '✓ Delivered' : '✕ Cancelled';
+    var bgColor    = o.status === 'cancelled'  ? '#fce8e8' : '#FFF0E0';
+    html +=
+      '<div class="past-card" style="animation-delay:' + (idx * 0.05) + 's;">' +
+        '<div class="pc-head" onclick="opTogglePast(' + idx + ')">' +
+          '<div class="pc-emoji" style="background:' + bgColor + ';">' + o.emoji + '</div>' +
+          '<div class="pc-info"><div class="pc-name">' + o.restaurant + '</div><div class="pc-date">' + opFormatDate(o.date) + ' &middot; ' + o.items.length + ' item' + (o.items.length > 1 ? 's' : '') + '</div></div>' +
+          '<div class="pc-right"><div class="pc-price">$' + o.total.toFixed(2) + '</div><div class="st-pill ' + statusCls + '">' + statusTxt + '</div></div>' +
+          '<div class="pc-chev" id="opChev' + idx + '">&#9662;</div>' +
+        '</div>' +
+        '<div class="pc-body" id="opBody' + idx + '">' +
+          '<div class="pc-items">' + itemsHtml + '</div>' +
+          '<div class="pc-total"><span>Total</span><span style="color:var(--fire);">$' + o.total.toFixed(2) + '</span></div>' +
+          reorderBtn +
+        '</div>' +
+      '</div>';
+  }
+  list.innerHTML = html;
+}
+
+function opTogglePast(idx) {
+  var body = document.getElementById('opBody'+idx);
+  var chev = document.getElementById('opChev'+idx);
+  var open = body.classList.toggle('open');
+  if(chev) chev.classList.toggle('open', open);
+}
+
+function opReorder(idx) {
+  var o = opGetPast()[idx];
+  if(!o) return;
+  if(confirm('Reorder from '+o.restaurant+'?')) {
+    try {
+      localStorage.setItem('sb_order_start', Date.now());
+      localStorage.setItem('sb_active_items', JSON.stringify(o.items.map(function(it){ return {name:it.name,qty:it.qty,emoji:o.emoji}; })));
+    } catch(e){}
+    goHome();
+    setTimeout(function(){ showTrackButtons(); openTracker(); }, 500);
+  }
+}
+
+function opTimeAgo(ts) {
+  var m = Math.floor((Date.now()-ts)/60000);
+  if(m<1) return 'just now'; if(m<60) return m+' min ago';
+  return Math.floor(m/60)+'h ago';
+}
+
+function opFormatDate(ts) {
+  var d=new Date(ts), now=new Date();
+  var diff=Math.floor((now-d)/86400000);
+  if(diff===0) return 'Today'; if(diff===1) return 'Yesterday';
+  if(diff<7) return diff+' days ago';
+  return d.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+}
+</script>
+
+
+<!-- ═══════════════ PROFILE PAGE ═══════════════ -->
+<div id="profilePage">
+<div class="pf-wrap">
+
+  <!-- Back Bar -->
+  <div style="display:flex;align-items:center;gap:.8rem;margin-bottom:1.5rem;">
+    <button onclick="goHome()" style="display:flex;align-items:center;gap:.5rem;background:#fff;border:1.5px solid #f0e8de;color:var(--smoke);padding:.55rem 1.1rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--fire)';this.style.color='var(--fire)'" onmouseout="this.style.borderColor='#f0e8de';this.style.color='var(--smoke)'">← Back to Home</button>
+    <button onclick="goOrders()" style="display:flex;align-items:center;gap:.5rem;background:#fff;border:1.5px solid #f0e8de;color:var(--smoke);padding:.55rem 1.1rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='var(--fire)';this.style.color='var(--fire)'" onmouseout="this.style.borderColor='#f0e8de';this.style.color='var(--smoke)'">📋 My Orders</button>
+  </div>
+
+  <!-- Hero -->
+  <div class="pf-hero">
+    <div class="pf-avatar-wrap">
+      <div class="pf-avatar" id="pfAvatarDisplay" onclick="pfOpenAvatarPicker()">👤</div>
+      <button class="pf-avatar-edit" onclick="pfOpenAvatarPicker()">📷</button>
+    </div>
+    <div class="pf-hero-info">
+      <div class="pf-name" id="pfDisplayName">Priya Sharma</div>
+      <div class="pf-email" id="pfDisplayEmail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5222203b2b337c213a33203f3312372a333f223e377c313d3f">[email&#160;protected]</a></div>
+      <div class="pf-member">⭐ Xoofy Member since Jan 2024</div>
+    </div>
+    <button class="pf-edit-btn" onclick="pfOpenEdit()">✏️ Edit</button>
+  </div>
+
+  <!-- Stats -->
+  <div class="pf-stats">
+    <div class="pf-stat"><div class="pf-stat-num" id="pfStatOrders">6</div><div class="pf-stat-lbl">Orders</div></div>
+    <div class="pf-stat"><div class="pf-stat-num" id="pfStatSpent">$157</div><div class="pf-stat-lbl">Total Spent</div></div>
+    <div class="pf-stat"><div class="pf-stat-num" id="pfStatPoints">330</div><div class="pf-stat-lbl">🏆 Points</div></div>
+  </div>
+
+  <!-- Active order (if any) -->
+  <div class="pf-card" id="pfActiveCard" style="display:none;">
+    <div class="pf-card-head">
+      <div class="pf-card-title">🛵 Active Order</div>
+      <button class="pf-card-action" onclick="openTracker()">Track →</button>
+    </div>
+    <div class="pf-active-mini" id="pfActiveMini"></div>
+  </div>
+
+  <!-- Personal Info -->
+  <div class="pf-card">
+    <div class="pf-card-head">
+      <div class="pf-card-title">👤 Personal Info</div>
+      <button class="pf-card-action" onclick="pfOpenEdit()">Edit</button>
+    </div>
+    <div class="pf-fields">
+      <div class="pf-field"><div class="pf-field-icon">👤</div><div class="pf-field-info"><div class="pf-field-label">Full Name</div><div class="pf-field-val" id="pfInfoName">Priya Sharma</div></div></div>
+      <div class="pf-field"><div class="pf-field-icon">📧</div><div class="pf-field-info"><div class="pf-field-label">Email</div><div class="pf-field-val" id="pfInfoEmail">priya.sharma [at] email.com</div></div></div>
+      <div class="pf-field"><div class="pf-field-icon">📱</div><div class="pf-field-info"><div class="pf-field-label">Phone</div><div class="pf-field-val" id="pfInfoPhone">+91 98765 43210</div></div></div>
+      <div class="pf-field"><div class="pf-field-icon">🎂</div><div class="pf-field-info"><div class="pf-field-label">Date of Birth</div><div class="pf-field-val" id="pfInfoDob">March 15, 1995</div></div></div>
+      <div class="pf-field"><div class="pf-field-icon">🍽️</div><div class="pf-field-info"><div class="pf-field-label">Food Preference</div><div class="pf-field-val" id="pfInfoPref">Vegetarian</div></div></div>
+    </div>
+  </div>
+
+  <!-- Saved Addresses -->
+  <div class="pf-card">
+    <div class="pf-card-head">
+      <div class="pf-card-title">📍 Saved Addresses</div>
+      <button class="pf-card-action" onclick="pfOpenAddAddress()">+ Add</button>
+    </div>
+    <div class="pf-addr-list" id="pfAddrList"></div>
+    <button class="add-addr-btn" onclick="pfOpenAddAddress()">+ Add New Address</button>
+  </div>
+
+  <!-- Recent Orders -->
+  <div class="pf-card">
+    <div class="pf-card-head">
+      <div class="pf-card-title">📋 Recent Orders</div>
+      <button class="pf-card-action" onclick="goOrders()">See All →</button>
+    </div>
+    <div class="pf-orders-mini" id="pfOrdersMini"></div>
+    <button class="pf-see-all" onclick="goOrders()">View Full Order History →</button>
+  </div>
+
+  <!-- Preferences -->
+  <div class="pf-card">
+    <div class="pf-card-head"><div class="pf-card-title">⚙️ Preferences</div></div>
+    <div class="pf-prefs">
+      <div class="pf-pref-row">
+        <span class="pf-pref-label">🔔 Order Notifications</span>
+        <label class="pf-toggle"><input type="checkbox" id="pref_notif" onchange="pfSavePref('notif',this.checked)"><span class="pf-toggle-slider"></span></label>
+      </div>
+      <div class="pf-pref-row">
+        <span class="pf-pref-label">📧 Email Offers &amp; Updates</span>
+        <label class="pf-toggle"><input type="checkbox" id="pref_email" onchange="pfSavePref('email',this.checked)"><span class="pf-toggle-slider"></span></label>
+      </div>
+      <div class="pf-pref-row">
+        <span class="pf-pref-label">🌙 Dark Mode</span>
+        <label class="pf-toggle"><input type="checkbox" id="pref_dark" onchange="pfSavePref('dark',this.checked)"><span class="pf-toggle-slider"></span></label>
+      </div>
+      <div class="pf-pref-row">
+        <span class="pf-pref-label">💳 Save Payment Method</span>
+        <label class="pf-toggle"><input type="checkbox" id="pref_payment" onchange="pfSavePref('payment',this.checked)"><span class="pf-toggle-slider"></span></label>
+      </div>
+      <div class="pf-pref-row">
+        <span class="pf-pref-label">🚴 Contactless Delivery</span>
+        <label class="pf-toggle"><input type="checkbox" id="pref_contactless" onchange="pfSavePref('contactless',this.checked)"><span class="pf-toggle-slider"></span></label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Out -->
+  <button class="pf-logout" id="pfLogoutBtn" onclick="pfSignOut()">Sign Out</button>
+
+</div>
+</div>
+
+<!-- Edit Profile Modal -->
+<div class="pf-modal-overlay" id="pfModalOverlay">
+  <div class="pf-modal">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.4rem;">
+      <div class="pf-modal-title" style="margin:0;">Edit Profile ✏️</div>
+      <button onclick="pfCloseEdit()" style="background:#f5ede3;border:none;width:32px;height:32px;border-radius:50%;font-size:1.1rem;cursor:pointer;">×</button>
+    </div>
+    <div class="pf-input-group"><label class="pf-input-label">Full Name</label><input class="pf-input" id="pfEditName" placeholder="Your full name"></div>
+    <div class="pf-input-group"><label class="pf-input-label">Email Address</label><input class="pf-input" id="pfEditEmail" type="text" placeholder="your@email.com"></div>
+    <div class="pf-input-group"><label class="pf-input-label">Phone Number</label><input class="pf-input" id="pfEditPhone" placeholder="+91 00000 00000"></div>
+    <div class="pf-input-group"><label class="pf-input-label">Date of Birth</label><input class="pf-input" id="pfEditDob" placeholder="e.g. March 15, 1995"></div>
+    <div class="pf-input-group">
+      <label class="pf-input-label">Food Preference</label>
+      <select class="pf-input" id="pfEditPref">
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-Vegetarian">Non-Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+        <option value="No Preference">No Preference</option>
+      </select>
+    </div>
+    <div class="pf-modal-actions">
+      <button class="pf-modal-cancel" onclick="pfCloseEdit()">Cancel</button>
+      <button class="pf-modal-save" onclick="pfSaveProfile()">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add Address Modal -->
+<div class="pf-modal-overlay" id="pfAddrModalOverlay">
+  <div class="pf-modal">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.4rem;">
+      <div class="pf-modal-title" style="margin:0;">Add Address 📍</div>
+      <button onclick="pfCloseAddr()" style="background:#f5ede3;border:none;width:32px;height:32px;border-radius:50%;font-size:1.1rem;cursor:pointer;">×</button>
+    </div>
+    <div class="pf-input-group">
+      <label class="pf-input-label">Label</label>
+      <select class="pf-input" id="pfAddrLabel">
+        <option value="Home">🏠 Home</option>
+        <option value="Work">💼 Work</option>
+        <option value="Other">📍 Other</option>
+      </select>
+    </div>
+    <div class="pf-input-group"><label class="pf-input-label">Street Address</label><input class="pf-input" id="pfAddrStreet" placeholder="Street, area, landmark"></div>
+    <div class="pf-input-group"><label class="pf-input-label">City &amp; Pincode</label><input class="pf-input" id="pfAddrCity" placeholder="City — Pincode"></div>
+    <div class="pf-pref-row" style="padding:.5rem 0;">
+      <span class="pf-pref-label" style="font-size:.88rem;">Set as Default Address</span>
+      <label class="pf-toggle"><input type="checkbox" id="pfAddrDefault"><span class="pf-toggle-slider"></span></label>
+    </div>
+    <div class="pf-modal-actions">
+      <button class="pf-modal-cancel" onclick="pfCloseAddr()">Cancel</button>
+      <button class="pf-modal-save" onclick="pfSaveAddress()">Save Address</button>
+    </div>
+  </div>
+</div>
+
+<!-- Avatar Picker Modal -->
+<div class="av-modal-overlay" id="avModalOverlay" onclick="if(event.target===this)pfCloseAvatarPicker()">
+  <div class="av-sheet">
+    <div class="av-sheet-title">
+      Choose Your Avatar
+      <button onclick="pfCloseAvatarPicker()" style="background:#f5ede3;border:none;width:30px;height:30px;border-radius:50%;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;">×</button>
+    </div>
+
+    <!-- Preview -->
+    <div style="text-align:center;margin-bottom:1.2rem;">
+      <div id="avPreviewCircle" style="width:80px;height:80px;border-radius:50%;background:#FFF0E0;border:3px solid var(--fire);margin:0 auto .6rem;display:flex;align-items:center;justify-content:center;font-size:2.8rem;overflow:hidden;">👤</div>
+      <div style="font-size:.75rem;color:var(--smoke);">Preview</div>
+    </div>
+
+    <!-- Emoji Avatars -->
+    <div class="av-section-label">Default Avatars</div>
+    <div class="av-emoji-grid" id="avEmojiGrid"></div>
+
+    <!-- Upload from gallery -->
+    <div class="av-section-label">Upload Photo</div>
+    <label class="av-upload-btn" for="avFileInput">
+      📷 Choose from Gallery
+    </label>
+    <input type="file" id="avFileInput" accept="image/*" style="display:none;" onchange="pfHandleAvatarUpload(event)">
+
+    <div style="display:flex;gap:.8rem;margin-top:1.2rem;">
+      <button onclick="pfCloseAvatarPicker()" style="flex:1;background:#f5ede3;border:none;padding:.8rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:.9rem;cursor:pointer;color:var(--smoke);">Cancel</button>
+      <button onclick="pfSaveAvatar()" style="flex:1;background:var(--fire);border:none;padding:.8rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.9rem;cursor:pointer;color:#fff;transition:background .2s;" onmouseover="this.style.background='var(--ember)'" onmouseout="this.style.background='var(--fire)'">Save Avatar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Out Confirm Modal -->
+<div class="pf-modal-overlay" id="pfSignOutModal">
+  <div class="pf-modal" style="text-align:center;">
+    <div style="font-size:3rem;margin-bottom:.8rem;">👋</div>
+    <div class="pf-modal-title" style="margin-bottom:.5rem;">Sign Out?</div>
+    <p style="color:var(--smoke);font-size:.9rem;margin-bottom:1.5rem;">You'll need to sign back in to place orders and track deliveries.</p>
+    <div class="pf-modal-actions">
+      <button class="pf-modal-cancel" onclick="document.getElementById('pfSignOutModal').style.display='none'">Stay In</button>
+      <button class="pf-modal-save" style="background:#e53935;" onclick="pfConfirmSignOut()">Yes, Sign Out</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+// ═══════════════════════════════════════════════════
+//  PROFILE PAGE LOGIC
+// ═══════════════════════════════════════════════════
+var PF_TOTAL_MS = 28 * 60 * 1000;
+var pfActiveLoop = null;
+var PF_DEFAULTS = { name:'Priya Sharma', email:'priya.sharma@example.com', phone:'+91 98765 43210', dob:'March 15, 1995', pref:'Vegetarian' };
+var PF_ADDR_DEFAULTS = [
+  { label:'Home', icon:'🏠', street:'42, MG Road, Indiranagar', city:'Bangalore — 560038', isDefault:true },
+  { label:'Work', icon:'💼', street:'Embassy Tech Village, Outer Ring Road', city:'Bangalore — 560103', isDefault:false }
+];
+
+function pfLoadUser() { try { return Object.assign({}, PF_DEFAULTS, JSON.parse(localStorage.getItem('sb_user')||'{}')); } catch(e) { return Object.assign({}, PF_DEFAULTS); } }
+function pfSaveUser(d) { try { localStorage.setItem('sb_user', JSON.stringify(d)); } catch(e) {} }
+function pfLoadAddresses() { try { var r=localStorage.getItem('sb_addresses'); return r ? JSON.parse(r) : JSON.parse(JSON.stringify(PF_ADDR_DEFAULTS)); } catch(e) { return JSON.parse(JSON.stringify(PF_ADDR_DEFAULTS)); } }
+function pfSaveAddresses(a) { try { localStorage.setItem('sb_addresses', JSON.stringify(a)); } catch(e) {} locUpdateNavBar(); }
+function pfLoadPrefs() { try { return Object.assign({notif:true,email:true,dark:false,payment:true,contactless:false}, JSON.parse(localStorage.getItem('sb_prefs')||'{}')); } catch(e) { return {notif:true,email:true,dark:false,payment:true,contactless:false}; } }
+function pfLoadAvatar() { try { return localStorage.getItem('sb_avatar') || '👤'; } catch(e) { return '👤'; } }
+
+function pfRender() { pfRenderUser(); pfRenderStats(); pfRenderActiveOrder(); pfRenderRecentOrders(); pfRenderAddresses(); pfRenderPrefs(); }
+
+function pfRenderUser() {
+  var u = pfLoadUser();
+  function set(id, v) { var e = document.getElementById(id); if (e) e.textContent = v; }
+  set('pfDisplayName', u.name); set('pfDisplayEmail', u.email);
+  set('pfInfoName', u.name); set('pfInfoEmail', u.email);
+  set('pfInfoPhone', u.phone); set('pfInfoDob', u.dob); set('pfInfoPref', u.pref);
+  var av = pfLoadAvatar(); if (av) pfApplyAvatar(av);
+}
+
+function pfRenderStats() {
+  var past = [{total:36.96,status:'delivered'},{total:27.47,status:'delivered'},{total:40.98,status:'delivered'},{total:12.48,status:'cancelled'},{total:51.94,status:'delivered'}];
+  var delivered = past.filter(function(o) { return o.status === 'delivered'; });
+  var total = past.length + (pfGetActive() ? 1 : 0);
+  var spent = delivered.reduce(function(s, o) { return s + o.total; }, 0);
+  function set(id, v) { var e = document.getElementById(id); if (e) e.textContent = v; }
+  set('pfStatOrders', total); set('pfStatSpent', '$' + spent.toFixed(0)); set('pfStatPoints', 240 + delivered.length * 15);
+}
+
+function pfGetActive() {
+  try { var s = parseInt(localStorage.getItem('sb_order_start')); var i = JSON.parse(localStorage.getItem('sb_active_items') || 'null'); if (!s || isNaN(s) || Date.now() - s >= PF_TOTAL_MS) return null; return { start: s, items: i || [{name:'Your Order', qty:1, emoji:'🍽️'}] }; } catch(e) { return null; }
+}
+
+function pfRenderActiveOrder() {
+  cancelAnimationFrame(pfActiveLoop);
+  var card = document.getElementById('pfActiveCard');
+  var mini = document.getElementById('pfActiveMini');
+  var order = pfGetActive();
+  if (!order) { if (card) card.style.display = 'none'; return; }
+  if (card) card.style.display = 'block';
+  var elapsed = Date.now() - order.start, prog = Math.min(elapsed / PF_TOTAL_MS, 1), msLeft = Math.max(PF_TOTAL_MS - elapsed, 0);
+  var mLeft = Math.ceil(msLeft / 60000), sLeft = Math.floor((msLeft % 60000) / 1000);
+  var stageLabels = ['Confirmed','Preparing','Pickup','On Way','Delivered'], fracs = [0,.08,.22,.40,.90], si = 0;
+  fracs.forEach(function(f, i) { if (prog >= f) si = i; });
+  var circ = 2 * Math.PI * 16, offset = circ * (1 - prog), color = prog > .7 ? '#e67e22' : '#FF3C1F';
+  var fi = order.items[0], more = order.items.length > 1 ? ' +' + (order.items.length - 1) + ' more' : '';
+  if (mini) mini.innerHTML = '<div class="pf-active-row" onclick="openTracker()" style="cursor:pointer;display:flex;align-items:center;gap:1rem;padding:.85rem 1rem;background:#FFF8EF;border-radius:16px;"><div style="position:relative;width:36px;height:36px;flex-shrink:0;"><svg width="36" height="36" viewBox="0 0 36 36" style="transform:rotate(-90deg);"><circle cx="18" cy="18" r="16" fill="none" stroke="#f0e8de" stroke-width="4"/><circle cx="18" cy="18" r="16" fill="none" stroke="' + color + '" stroke-width="4" stroke-linecap="round" stroke-dasharray="' + circ.toFixed(1) + '" stroke-dashoffset="' + offset.toFixed(1) + '"/></svg><div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;color:#1A0A00;">' + mLeft + 'm</div></div><div style="flex:1;min-width:0;"><div style="font-weight:700;font-size:.9rem;color:#1A0A00;">' + (fi.emoji||'') + ' ' + fi.name + more + '</div><div style="font-size:.78rem;color:#6B4F3A;margin-top:.1rem;">' + stageLabels[si] + ' · Rider: Rahul K.</div></div><div style="background:#FF3C1F;color:#fff;padding:.3rem .8rem;border-radius:50px;font-size:.78rem;font-weight:700;white-space:nowrap;">' + String(mLeft).padStart(2,'0') + ':' + String(sLeft).padStart(2,'0') + '</div></div>';
+  pfActiveLoop = requestAnimationFrame(function() { setTimeout(pfRenderActiveOrder, 1000); });
+}
+
+var PF_DEMO_PAST = [
+  { restaurant:'The Pizza House', emoji:'🍕', date:Date.now()-2*86400000, total:36.96, items:[{name:'Margherita Supreme'},{name:'Lava Chocolate Cake'}] },
+  { restaurant:'Burger Republic', emoji:'🍔', date:Date.now()-5*86400000, total:27.47, items:[{name:'Smash Double Burger'},{name:'Avocado Crunch Bowl'}] },
+  { restaurant:'Ramen Lab', emoji:'🍜', date:Date.now()-9*86400000, total:40.98, items:[{name:'Spicy Ramen Bowl'}] }
+];
+
+function pfRenderRecentOrders() {
+  var el = document.getElementById('pfOrdersMini'); if (!el) return;
+  el.innerHTML = PF_DEMO_PAST.slice(0,3).map(function(o) {
+    var diff = Math.floor((Date.now()-o.date)/86400000);
+    var ds = diff===0?'Today':diff===1?'Yesterday':diff+' days ago';
+    var items = o.items.map(function(it) { return it.name; }).join(', ');
+    return '<div class="pf-order-row" onclick="goOrders()" style="cursor:pointer;"><div class="pf-order-emoji">' + o.emoji + '</div><div class="pf-order-info"><div class="pf-order-name">' + o.restaurant + '</div><div class="pf-order-date">' + ds + ' · ' + items.substring(0,32) + (items.length>32?'...':'') + '</div></div><div class="pf-order-amt">$' + o.total.toFixed(2) + '</div></div>';
+  }).join('');
+}
+
+function pfRenderAddresses() {
+  var list = document.getElementById('pfAddrList'); if (!list) return;
+  var addrs = pfLoadAddresses(); list.innerHTML = '';
+  addrs.forEach(function(a, idx) {
+    var div = document.createElement('div'); div.className = 'pf-addr';
+    var iconEl = document.createElement('div'); iconEl.className = 'pf-addr-icon'; iconEl.textContent = a.icon;
+    var info = document.createElement('div'); info.className = 'pf-addr-info';
+    var tag = document.createElement('div'); tag.className = 'pf-addr-tag'; tag.textContent = a.label;
+    if (a.isDefault) { var dflt = document.createElement('span'); dflt.className = 'pf-addr-default'; dflt.textContent = 'Default'; tag.appendChild(dflt); }
+    var txt = document.createElement('div'); txt.className = 'pf-addr-text'; txt.textContent = a.street + ', ' + a.city;
+    info.appendChild(tag); info.appendChild(txt);
+    var btns = document.createElement('div'); btns.style.cssText = 'display:flex;flex-direction:column;align-items:flex-end;gap:.3rem;flex-shrink:0;';
+    if (!a.isDefault) { var sb = document.createElement('button'); sb.textContent = 'Set Default'; sb.style.cssText = 'font-size:.72rem;background:#FFF8EF;border:1px solid #7C3AED;color:#7C3AED;border-radius:50px;padding:.2rem .7rem;cursor:pointer;font-family:sans-serif;white-space:nowrap;'; sb.onclick = (function(i){ return function(){ pfSetDefault(i); }; })(idx); btns.appendChild(sb); }
+    var db = document.createElement('button'); db.textContent = 'Delete'; db.style.cssText = 'font-size:.72rem;background:#fce8e8;border:1px solid #e53935;color:#e53935;border-radius:50px;padding:.2rem .7rem;cursor:pointer;font-family:sans-serif;'; db.onclick = (function(i){ return function(){ pfDeleteAddr(i); }; })(idx); btns.appendChild(db);
+    div.appendChild(iconEl); div.appendChild(info); div.appendChild(btns); list.appendChild(div);
+  });
+}
+
+function pfSetDefault(idx) { var a = pfLoadAddresses(); a.forEach(function(x,i){ x.isDefault=(i===idx); }); pfSaveAddresses(a); pfRenderAddresses(); pfShowToast('📍 Default address updated!'); }
+function pfDeleteAddr(idx) { var a = pfLoadAddresses(); if(a.length<=1){pfShowToast('❌ Keep at least one address');return;} a.splice(idx,1); if(!a.some(function(x){return x.isDefault;})) a[0].isDefault=true; pfSaveAddresses(a); pfRenderAddresses(); pfShowToast('🗑️ Address removed'); }
+
+function pfOpenAddAddress() {
+  document.getElementById('pfAddrStreet').value = '';
+  document.getElementById('pfAddrCity').value = '';
+  document.getElementById('pfAddrLabel').value = 'Home';
+  document.getElementById('pfAddrDefault').checked = false;
+  document.getElementById('pfAddrModalOverlay').style.display = 'flex';
+}
+function pfCloseAddr() { document.getElementById('pfAddrModalOverlay').style.display = 'none'; }
+function pfSaveAddress() {
+  var label = document.getElementById('pfAddrLabel').value;
+  var street = document.getElementById('pfAddrStreet').value.trim();
+  var city = document.getElementById('pfAddrCity').value.trim();
+  var isDef = document.getElementById('pfAddrDefault').checked;
+  if (!street || !city) { pfShowToast('❌ Please fill in all fields'); return; }
+  var icons = { Home:'🏠', Work:'💼', Other:'📍' };
+  var a = pfLoadAddresses(); if (isDef) a.forEach(function(x){x.isDefault=false;});
+  a.push({ label:label, icon:icons[label]||'📍', street:street, city:city, isDefault:isDef });
+  pfSaveAddresses(a); pfCloseAddr(); pfRenderAddresses(); pfShowToast('✅ Address saved!'); locUpdateNavBar();
+}
+
+function pfRenderPrefs() {
+  var p = pfLoadPrefs();
+  var map = {notif:'pref_notif',email:'pref_email',dark:'pref_dark',payment:'pref_payment',contactless:'pref_contactless'};
+  Object.keys(map).forEach(function(k){ var e=document.getElementById(map[k]); if(e) e.checked=!!p[k]; });
+  if (p.dark) pfApplyDark(true);
+}
+function pfSavePref(key, val) {
+  var p = pfLoadPrefs(); p[key] = val; try { localStorage.setItem('sb_prefs', JSON.stringify(p)); } catch(e) {}
+  var msgs = {notif:val?'🔔 On':'🔕 Off',email:val?'📧 On':'📧 Off',dark:val?'🌙 Dark mode':'☀️ Light mode',payment:val?'💳 Saved':'💳 Removed',contactless:val?'🚴 On':'🚴 Off'};
+  if (key === 'dark') pfApplyDark(val);
+  pfShowToast(msgs[key] || 'Saved');
+}
+function pfApplyDark(on) { document.body.style.filter = on ? 'invert(0.88) hue-rotate(180deg)' : ''; document.body.style.background = on ? '#111' : ''; }
+
+function pfOpenEdit() {
+  var u = pfLoadUser();
+  document.getElementById('pfEditName').value = u.name;
+  document.getElementById('pfEditEmail').value = u.email;
+  document.getElementById('pfEditPhone').value = u.phone;
+  document.getElementById('pfEditDob').value = u.dob;
+  document.getElementById('pfEditPref').value = u.pref;
+  document.getElementById('pfModalOverlay').style.display = 'flex';
+}
+function pfCloseEdit() { document.getElementById('pfModalOverlay').style.display = 'none'; }
+function pfSaveProfile() {
+  var name = document.getElementById('pfEditName').value.trim();
+  if (!name) { pfShowToast('❌ Name cannot be empty'); return; }
+  pfSaveUser({ name:name, email:document.getElementById('pfEditEmail').value.trim(), phone:document.getElementById('pfEditPhone').value.trim(), dob:document.getElementById('pfEditDob').value.trim(), pref:document.getElementById('pfEditPref').value });
+  pfCloseEdit(); pfRenderUser(); pfShowToast('✅ Profile updated!');
+}
+
+function pfSignOut() { document.getElementById('pfSignOutModal').style.display = 'flex'; }
+function pfConfirmSignOut() {
+  try {
+    localStorage.removeItem('sb_order_start'); localStorage.removeItem('sb_active_items');
+    localStorage.removeItem('sb_user'); localStorage.removeItem('sb_prefs');
+    localStorage.removeItem('sb_avatar'); localStorage.removeItem('sb_addresses');
+    localStorage.removeItem('sb_active_loc'); localStorage.setItem('sb_logged_in','false');
+  } catch(e) {}
+  document.getElementById('pfSignOutModal').style.display = 'none';
+  var dot = document.getElementById('avatarLiveDot'); if (dot) dot.style.display = 'none';
+  // Reset avatar to default
+  var ab = document.getElementById('avatarBtn'); if(ab) ab.innerHTML = '👤<span id="avatarLiveDot" style="display:none;position:absolute;top:1px;right:1px;width:10px;height:10px;border-radius:50%;background:#27AE60;border:2px solid #fff;"></span>';
+  var pd = document.getElementById('pfAvatarDisplay'); if(pd){ pd.innerHTML='👤'; pd.style.fontSize='2.4rem'; }
+  // Show login page
+  showLoginPage();
+}
+
+var PF_EMOJIS = ['😀','😎','🤩','🥳','😇','🧑','👩','👨','🧔','👩‍🦰','👩‍🦱','👩‍🦳','👩‍🦲','🧑‍🍳','👨‍🍳','🧑‍💻','👩‍💻','🦸','🦹','🧙','🧝','🐱','🐶','🦊','🐼','🌟'];
+var avSelectedEmoji = null, avSelectedImage = null;
+
+function pfOpenAvatarPicker() {
+  var grid = document.getElementById('avEmojiGrid'), current = pfLoadAvatar();
+  if (grid) {
+    grid.innerHTML = '';
+    PF_EMOJIS.forEach(function(e) {
+      var btn = document.createElement('button');
+      btn.className = 'av-emoji-btn' + (current === e ? ' selected' : '');
+      btn.textContent = e;
+      btn.onclick = function() { avSelectEmoji(e); };
+      grid.appendChild(btn);
+    });
+  }
+  pfSetAvPreview(current || '👤'); avSelectedEmoji = null; avSelectedImage = null;
+  var ov = document.getElementById('avModalOverlay'); if (ov) ov.classList.add('open');
+}
+function pfCloseAvatarPicker() { var ov = document.getElementById('avModalOverlay'); if (ov) ov.classList.remove('open'); }
+function avSelectEmoji(emoji) {
+  avSelectedEmoji = emoji; avSelectedImage = null; pfSetAvPreview(emoji);
+  document.querySelectorAll('.av-emoji-btn').forEach(function(b) { b.classList.toggle('selected', b.textContent.trim() === emoji); });
+}
+function pfSetAvPreview(val) {
+  var c = document.getElementById('avPreviewCircle'); if (!c) return;
+  if (val && val.startsWith('data:')) c.innerHTML = '<img src="' + val + '" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">';
+  else { c.innerHTML = val || '👤'; c.style.fontSize = '2.8rem'; }
+}
+function pfHandleAvatarUpload(event) {
+  var file = event.target.files[0]; if (!file) return;
+  var reader = new FileReader();
+  reader.onload = function(e) { avSelectedImage = e.target.result; avSelectedEmoji = null; pfSetAvPreview(avSelectedImage); document.querySelectorAll('.av-emoji-btn').forEach(function(b){b.classList.remove('selected');}); };
+  reader.readAsDataURL(file);
+}
+function pfSaveAvatar() {
+  var val = avSelectedImage || avSelectedEmoji;
+  if (!val) { pfShowToast('❌ Please select an avatar first'); return; }
+  try { localStorage.setItem('sb_avatar', val); } catch(e) {}
+  pfApplyAvatar(val); pfCloseAvatarPicker(); pfShowToast('✅ Avatar updated!');
+}
+function pfApplyAvatar(val) {
+  var d = document.getElementById('pfAvatarDisplay');
+  if (d) { if (val && val.startsWith('data:')) d.innerHTML = '<img src="' + val + '" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">'; else { d.innerHTML = val || '👤'; d.style.fontSize = '2.4rem'; } }
+  var btn = document.getElementById('avatarBtn');
+  if (btn) { var dot = document.getElementById('avatarLiveDot'); var dv = dot ? dot.style.display : 'none'; if (val && val.startsWith('data:')) btn.innerHTML = '<img src="' + val + '" style="width:38px;height:38px;object-fit:cover;border-radius:50%;"><span id="avatarLiveDot" style="display:' + dv + ';position:absolute;top:1px;right:1px;width:10px;height:10px;border-radius:50%;background:#27AE60;border:2px solid #fff;"></span>'; else btn.innerHTML = (val||'👤') + '<span id="avatarLiveDot" style="display:' + dv + ';position:absolute;top:1px;right:1px;width:10px;height:10px;border-radius:50%;background:#27AE60;border:2px solid #fff;"></span>'; }
+}
+
+function pfShowToast(msg) {
+  var t = document.getElementById('orderToast'); if (!t) return;
+  t.textContent = msg; t.style.display = 'block';
+  clearTimeout(window._pfToastTimer);
+  window._pfToastTimer = setTimeout(function(){ t.style.display='none'; }, 2800);
+}
+
+// ═══════════════════════════════════════════════════
+//  LOCATION SYSTEM
+// ═══════════════════════════════════════════════════
+var locDropdownOpen = false;
+var LOC_DEFAULTS = [{ label:'Home', icon:'🏠', street:'42, MG Road, Indiranagar', city:'Bangalore — 560038' }, { label:'Work', icon:'💼', street:'Embassy Tech Village, Outer Ring Road', city:'Bangalore — 560103' }];
+
+function locGetAddresses() { try { var r = localStorage.getItem('sb_addresses'); return r ? JSON.parse(r) : LOC_DEFAULTS; } catch(e) { return LOC_DEFAULTS; } }
+function locGetActive() { try { var i = parseInt(localStorage.getItem('sb_active_loc')||'0'); return isNaN(i) ? 0 : i; } catch(e) { return 0; } }
+function locSetActive(idx) { try { localStorage.setItem('sb_active_loc', idx); } catch(e) {} }
+function locUpdateNavBar() {
+  var addrs = locGetAddresses(), active = locGetActive(), addr = addrs[active] || addrs[0]; if (!addr) return;
+  var ne = document.getElementById('navLocName'), se = document.getElementById('navLocSub');
+  if (ne) ne.textContent = addr.label + ' — ' + addr.street.split(',')[0];
+  if (se) se.textContent = addr.city;
+}
+function locRenderDropdown() {
+  var list = document.getElementById('locAddrList'), addrs = locGetAddresses(), active = locGetActive();
+  if (!list) return; list.innerHTML = '';
+  addrs.forEach(function(a, idx) {
+    var div = document.createElement('div');
+    div.className = 'loc-addr-item' + (idx===active ? ' active' : '');
+    div.innerHTML = '<div class="loc-addr-icon">' + a.icon + '</div><div class="loc-addr-info"><div class="loc-addr-name">' + a.label + (idx===active ? '<span class="loc-active-dot"></span>' : '') + '</div><div class="loc-addr-street">' + a.street + ', ' + a.city + '</div></div>';
+    div.onclick = (function(i){ return function(){ locSelect(i); }; })(idx);
+    list.appendChild(div);
+  });
+}
+function toggleLocDropdown() {
+  var dd = document.getElementById('locDropdown'); if (!dd) return;
+  locDropdownOpen = !locDropdownOpen;
+  if (locDropdownOpen) { locRenderDropdown(); dd.classList.add('open'); setTimeout(function(){ document.addEventListener('click', locOutsideClick); }, 10); }
+  else { dd.classList.remove('open'); document.removeEventListener('click', locOutsideClick); }
+}
+function locOutsideClick(e) {
+  var dd = document.getElementById('locDropdown'), lb = document.querySelector('.nav-location-bar');
+  if (dd && !dd.contains(e.target) && lb && !lb.contains(e.target)) { dd.classList.remove('open'); locDropdownOpen = false; document.removeEventListener('click', locOutsideClick); }
+}
+function locSelect(idx) {
+  locSetActive(idx); locUpdateNavBar();
+  var dd = document.getElementById('locDropdown'); if (dd) dd.classList.remove('open');
+  locDropdownOpen = false; document.removeEventListener('click', locOutsideClick);
+  var a = locGetAddresses()[idx]; if (a) pfShowToast('📍 Delivering to ' + a.label + ' — ' + a.street.split(',')[0]);
+  // Sync profile address list if profile page is open
+  if (document.getElementById('profilePage').style.display !== 'none') pfRenderAddresses();
+}
+function locUseGPS() {
+  var dd = document.getElementById('locDropdown'); if (dd) dd.classList.remove('open'); locDropdownOpen = false;
+  if (!navigator.geolocation) { pfShowToast('❌ GPS not supported'); return; }
+  pfShowToast('🎯 Getting your location...');
+  navigator.geolocation.getCurrentPosition(function(pos){ var ne=document.getElementById('navLocName'),se=document.getElementById('navLocSub'); if(ne)ne.textContent='Current Location'; if(se)se.textContent=pos.coords.latitude.toFixed(4)+', '+pos.coords.longitude.toFixed(4); pfShowToast('📍 Location updated!'); }, function(){ pfShowToast('❌ Could not get location'); });
+}
+function locGoAddAddress() {
+  var dd = document.getElementById('locDropdown'); if (dd) dd.classList.remove('open'); locDropdownOpen = false;
+  goProfile(); setTimeout(function(){ pfOpenAddAddress(); }, 500);
+}
+
+// ═══════════════════════════════════════════════════
+//  SEARCH SYSTEM
+// ═══════════════════════════════════════════════════
+var SEARCH_DATA = {
+  foods: [
+    {name:'Margherita Supreme',  emoji:'🍕',bg:'food-img-bg1',desc:'Fresh mozzarella, basil, san marzano tomatoes',price:'$12.99',rating:'4.8',time:'25min',restaurant:'The Pizza House',category:'Pizza',  tags:['pizza','italian','vegetarian']},
+    {name:'Avocado Crunch Bowl', emoji:'🥗',bg:'food-img-bg2',desc:'Mixed greens, avocado, corn, cherry tomato',    price:'$9.49', rating:'4.7',time:'15min',restaurant:'Green Bowl Co.', category:'Salads', tags:['salad','healthy','vegan']},
+    {name:'Smash Double Burger', emoji:'🍔',bg:'food-img-bg3',desc:'Double smash patty, cheddar, caramelized onions',price:'$14.99',rating:'4.9',time:'20min',restaurant:'Burger Republic',category:'Burgers',tags:['burger','beef','american']},
+    {name:'Spicy Ramen Bowl',    emoji:'🍜',bg:'food-img-bg4',desc:'Rich tonkotsu broth, chashu pork, soft egg',    price:'$13.50',rating:'4.8',time:'30min',restaurant:'Ramen Lab',     category:'Noodles',tags:['ramen','japanese','noodles']},
+    {name:'Street Tacos (3pc)', emoji:'🌮',bg:'food-img-bg5',desc:'Grilled chicken, pico de gallo, guac, cotija',  price:'$10.99',rating:'4.6',time:'20min',restaurant:'Taco Street',   category:'Mexican',tags:['tacos','mexican','chicken']},
+    {name:'Lava Chocolate Cake',emoji:'🍰',bg:'food-img-bg6',desc:'Warm dark chocolate cake, vanilla ice cream',   price:'$7.99', rating:'5.0',time:'15min',restaurant:'Sweet Lab',     category:'Desserts',tags:['dessert','chocolate','cake']},
+    {name:'Chicken Biryani',    emoji:'🍛',bg:'food-img-bg3',desc:'Aromatic basmati rice with tender chicken',     price:'$11.99',rating:'4.9',time:'35min',restaurant:'Spice Garden',  category:'Indian', tags:['biryani','indian','rice','chicken']},
+    {name:'Sushi Platter (8pc)',emoji:'🍣',bg:'food-img-bg5',desc:'Fresh nigiri and maki, wasabi, pickled ginger', price:'$18.99',rating:'4.8',time:'20min',restaurant:'Tokyo Bites',   category:'Sushi',  tags:['sushi','japanese','seafood']},
+    {name:'BBQ Chicken Wings',  emoji:'🍗',bg:'food-img-bg3',desc:'Crispy wings, smoky BBQ glaze, ranch dip',      price:'$12.49',rating:'4.6',time:'25min',restaurant:'Wing Zone',     category:'Chicken',tags:['wings','chicken','bbq']},
+    {name:'Cold Coffee',        emoji:'🥤',bg:'food-img-bg2',desc:'Rich cold brew with milk, caramel drizzle',     price:'$4.99', rating:'4.6',time:'10min',restaurant:'Brew House',    category:'Drinks', tags:['coffee','cold','drinks']},
+    {name:'Mango Lassi',        emoji:'🥛',bg:'food-img-bg5',desc:'Fresh mango blended with yogurt and cardamom',  price:'$3.99', rating:'4.8',time:'8min', restaurant:'Spice Garden',  category:'Drinks', tags:['lassi','mango','drinks','indian']},
+    {name:'Masala Dosa',        emoji:'🫓',bg:'food-img-bg4',desc:'Crispy crepe, potato masala, coconut chutney',  price:'$7.49', rating:'4.7',time:'20min',restaurant:'South Bites',   category:'Indian', tags:['dosa','south indian','vegetarian']}
+  ],
+  restaurants: [
+    {name:'The Pizza House', emoji:'🍕',bg:'#FFF0E0',rating:'4.8',time:'20-30 min',cuisine:'Italian, Pizza',   minOrder:'$10',tags:['pizza','italian']},
+    {name:'Burger Republic', emoji:'🍔',bg:'#FFF3E0',rating:'4.9',time:'15-25 min',cuisine:'American, Burgers',minOrder:'$8', tags:['burger','american']},
+    {name:'Ramen Lab',       emoji:'🍜',bg:'#FCE4EC',rating:'4.8',time:'25-35 min',cuisine:'Japanese, Noodles',minOrder:'$12',tags:['ramen','japanese']},
+    {name:'Taco Street',     emoji:'🌮',bg:'#E8F5E9',rating:'4.6',time:'15-20 min',cuisine:'Mexican',          minOrder:'$8', tags:['tacos','mexican']},
+    {name:'Spice Garden',    emoji:'🍛',bg:'#FFF3E0',rating:'4.9',time:'30-40 min',cuisine:'Indian, Biryani',  minOrder:'$10',tags:['indian','biryani']},
+    {name:'Tokyo Bites',     emoji:'🍣',bg:'#E3F2FD',rating:'4.8',time:'15-25 min',cuisine:'Japanese, Sushi',  minOrder:'$15',tags:['sushi','japanese']},
+    {name:'Green Bowl Co.',  emoji:'🥗',bg:'#E8F5E9',rating:'4.7',time:'10-15 min',cuisine:'Healthy, Salads',  minOrder:'$8', tags:['salad','healthy']},
+    {name:'Sweet Lab',       emoji:'🍰',bg:'#F3E5F5',rating:'4.9',time:'10-20 min',cuisine:'Desserts, Cakes',  minOrder:'$6', tags:['dessert','cakes']},
+    {name:'South Bites',     emoji:'🫓',bg:'#FFF8EF',rating:'4.7',time:'15-20 min',cuisine:'South Indian',     minOrder:'$6', tags:['dosa','south indian']}
+  ]
+};
+
+var POPULAR_SEARCHES = ['Pizza','Burger','Biryani','Sushi','Tacos','Ramen','Desserts','Healthy'];
+var srchActiveFilter = 'All', srchCurrentQuery = '';
+
+function srchHighlight(text, query) {
+  if (!query || !text) return text || '';
+  var lower = text.toLowerCase(), lq = query.trim().toLowerCase(), result = '', i = 0;
+  while (i < text.length) {
+    var idx = lower.indexOf(lq, i);
+    if (idx === -1) { result += text.slice(i); break; }
+    result += text.slice(i, idx) + '<mark>' + text.slice(idx, idx + lq.length) + '</mark>';
+    i = idx + lq.length;
+  }
+  return result;
+}
+
+function srchQuery(q) {
+  q = q.trim().toLowerCase(); if (!q) return { foods:[], restaurants:[] };
+  return {
+    foods: SEARCH_DATA.foods.filter(function(f){ return f.name.toLowerCase().indexOf(q)>-1||f.desc.toLowerCase().indexOf(q)>-1||f.restaurant.toLowerCase().indexOf(q)>-1||f.category.toLowerCase().indexOf(q)>-1||f.tags.some(function(t){return t.indexOf(q)>-1;}); }),
+    restaurants: SEARCH_DATA.restaurants.filter(function(r){ return r.name.toLowerCase().indexOf(q)>-1||r.cuisine.toLowerCase().indexOf(q)>-1||r.tags.some(function(t){return t.indexOf(q)>-1;}); })
+  };
+}
+
+function srchBuildDropdownHTML(results, val) {
+  var html = '';
+  if (results.restaurants.length > 0) {
+    html += '<div class="srch-section-label">Restaurants</div>';
+    results.restaurants.slice(0,3).forEach(function(r) {
+      var div = document.createElement('div'); div.className = 'srch-item';
+      div.innerHTML = '<div class="srch-item-icon" style="background:' + r.bg + ';">' + r.emoji + '</div><div class="srch-item-info"><div class="srch-item-name">' + srchHighlight(r.name,val) + '</div><div class="srch-item-sub">' + r.cuisine + ' · ' + r.time + '</div></div><div class="srch-item-right">⭐ ' + r.rating + '</div>';
+      div.onclick = (function(n){ return function(){ srchSelectRestaurant(n); }; })(r.name);
+      html += div.outerHTML;
+    });
+  }
+  if (results.foods.length > 0) {
+    if (results.restaurants.length > 0) html += '<div class="srch-divider"></div>';
+    html += '<div class="srch-section-label">Dishes</div>';
+    results.foods.slice(0,4).forEach(function(f) {
+      var div = document.createElement('div'); div.className = 'srch-item';
+      div.innerHTML = '<div class="srch-item-icon" style="background:linear-gradient(135deg,#FFF0E0,#FFD4A8);">' + f.emoji + '</div><div class="srch-item-info"><div class="srch-item-name">' + srchHighlight(f.name,val) + '</div><div class="srch-item-sub">' + f.restaurant + ' · ' + f.time + '</div></div><div class="srch-item-right">' + f.price + '</div>';
+      div.onclick = (function(n){ return function(){ srchSelectFood(n); }; })(f.name);
+      html += div.outerHTML;
+    });
+  }
+  return html;
+}
+
+function srchOnInput(val) {
+  srchCurrentQuery = val;
+  var dd = document.getElementById('srchDropdown'), inner = document.getElementById('srchDropdownInner');
+  if (!dd || !inner) return;
+  if (!val.trim()) { srchShowPopular(inner); dd.classList.add('open'); return; }
+  var results = srchQuery(val), total = results.foods.length + results.restaurants.length;
+  if (total === 0) { inner.innerHTML = '<div class="srch-empty"><span class="srch-empty-icon">🔍</span>No results for "' + val + '"</div>'; dd.classList.add('open'); return; }
+  var html = srchBuildDropdownHTML(results, val);
+  if (total > 5) html += '<div class="srch-divider"></div><div class="srch-item" style="justify-content:center;color:var(--fire);font-weight:600;font-size:.88rem;" onclick="srchSubmit()">See all ' + total + ' results →</div>';
+  inner.innerHTML = html; dd.classList.add('open');
+}
+
+function srchShowPopular(inner) {
+  var html = '<div class="srch-section-label">Popular Searches</div><div class="srch-tags">';
+  POPULAR_SEARCHES.forEach(function(tag) {
+    var span = document.createElement('span'); span.className = 'srch-tag'; span.textContent = '🔥 ' + tag;
+    span.onclick = (function(t){ return function(){ srchQuickSearch(t); }; })(tag);
+    html += span.outerHTML;
+  });
+  html += '</div><div class="srch-section-label">Top Restaurants</div>';
+  SEARCH_DATA.restaurants.slice(0,4).forEach(function(r) {
+    var div = document.createElement('div'); div.className = 'srch-item';
+    div.innerHTML = '<div class="srch-item-icon" style="background:' + r.bg + ';">' + r.emoji + '</div><div class="srch-item-info"><div class="srch-item-name">' + r.name + '</div><div class="srch-item-sub">' + r.cuisine + '</div></div><div class="srch-item-right">⭐ ' + r.rating + '</div>';
+    div.onclick = (function(n){ return function(){ srchSelectRestaurant(n); }; })(r.name);
+    html += div.outerHTML;
+  });
+  inner.innerHTML = html;
+}
+
+function srchOnFocus() {
+  var val = document.getElementById('heroSearchInput').value;
+  if (!val.trim()) { var inner = document.getElementById('srchDropdownInner'); if (inner) srchShowPopular(inner); }
+  document.getElementById('srchDropdown').classList.add('open');
+  setTimeout(function(){ document.addEventListener('click', srchOutsideClick); }, 10);
+}
+function srchOutsideClick(e) {
+  var wrap = document.getElementById('heroSearchWrap');
+  if (wrap && !wrap.contains(e.target)) { document.getElementById('srchDropdown').classList.remove('open'); document.removeEventListener('click', srchOutsideClick); }
+}
+function srchOnKey(e) {
+  if (e.key === 'Enter') srchSubmit();
+  if (e.key === 'Escape') { document.getElementById('srchDropdown').classList.remove('open'); var p = document.getElementById('searchResultsPage'); if (p) p.classList.remove('open'); }
+}
+function srchQuickSearch(tag) { var inp = document.getElementById('heroSearchInput'); if (inp) inp.value = tag; srchCurrentQuery = tag; srchSubmit(); }
+function srchQuickSearch2(tag) { var inp = document.getElementById('srpInput'); if (inp) inp.value = tag; srchRunSearch(tag); }
+function srchSelectFood(name) { document.getElementById('srchDropdown').classList.remove('open'); var inp = document.getElementById('heroSearchInput'); if (inp) inp.value = name; srchCurrentQuery = name; srchSubmit(); }
+function srchSelectRestaurant(name) { document.getElementById('srchDropdown').classList.remove('open'); var inp = document.getElementById('heroSearchInput'); if (inp) inp.value = name; srchCurrentQuery = name; srchSubmit(); }
+
+function srchSubmit() {
+  var inp = document.getElementById('heroSearchInput');
+  var query = (inp ? inp.value.trim() : '') || srchCurrentQuery;
+  document.getElementById('srchDropdown').classList.remove('open');
+  document.removeEventListener('click', srchOutsideClick);
+  var page = document.getElementById('searchResultsPage'), srpInp = document.getElementById('srpInput');
+  if (page) page.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (srpInp) srpInp.value = query;
+  srchActiveFilter = 'All'; srchCurrentQuery = query; srchRunSearch(query);
+}
+function srchClose() {
+  var p = document.getElementById('searchResultsPage'); if (p) p.classList.remove('open');
+  document.body.style.overflow = '';
+  var inp = document.getElementById('heroSearchInput'); if (inp) inp.value = '';
+  srchCurrentQuery = '';
+}
+function srchClearInput() { var inp = document.getElementById('srpInput'); if (inp) { inp.value = ''; inp.focus(); } var c = document.getElementById('srpClear'); if (c) c.style.display = 'none'; srchRunSearch(''); }
+
+function srchRunSearch(query) {
+  srchCurrentQuery = query;
+  var clearBtn = document.getElementById('srpClear'); if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
+  var results = srchQuery(query), allFoods = results.foods, allRests = results.restaurants;
+  if (srchActiveFilter !== 'All') {
+    if (srchActiveFilter === 'Restaurants') allFoods = [];
+    else if (srchActiveFilter === 'Dishes') allRests = [];
+    else { allFoods = allFoods.filter(function(f){ return f.category === srchActiveFilter; }); allRests = []; }
+  }
+  var total = allFoods.length + allRests.length;
+  var countEl = document.getElementById('srpCount'); if (countEl) countEl.innerHTML = query ? '<strong>' + total + ' result' + (total!==1?'s':'') + '</strong> for "' + query + '"' : 'Browse all restaurants & dishes';
+  var cats = ['All','Dishes','Restaurants','Pizza','Burgers','Indian','Sushi','Salads','Desserts','Drinks'];
+  var filtersEl = document.getElementById('srpFilters');
+  if (filtersEl) {
+    filtersEl.innerHTML = '';
+    cats.forEach(function(cat) {
+      var btn = document.createElement('button'); btn.className = 'srp-filter' + (cat===srchActiveFilter?' active':''); btn.textContent = cat;
+      btn.onclick = (function(c){ return function(){ srchSetFilter(c); }; })(cat);
+      filtersEl.appendChild(btn);
+    });
+  }
+  var resultsEl = document.getElementById('srpResults'); if (!resultsEl) return;
+  if (total === 0 && query) {
+    var emptyDiv = document.createElement('div'); emptyDiv.style.cssText = 'text-align:center;padding:3rem 1rem;color:var(--smoke);';
+    emptyDiv.innerHTML = '<div style="font-size:3rem;margin-bottom:.8rem;">🔍</div><div style="font-weight:700;font-size:1rem;color:var(--dark);">No results found</div><div style="font-size:.85rem;margin-top:.4rem;">Try pizza, burger or biryani</div>';
+    resultsEl.innerHTML = ''; resultsEl.appendChild(emptyDiv); return;
+  }
+  var html = '';
+  if (allRests.length > 0) {
+    html += '<div style="font-weight:700;font-size:.9rem;color:var(--dark);margin-bottom:.8rem;">🏪 Restaurants (' + allRests.length + ')</div><div class="srp-grid" style="margin-bottom:1.8rem;">';
+    allRests.forEach(function(r) { html += '<div class="srp-restaurant-card" data-rest="' + r.name + '"><div class="srp-rest-banner" style="background:' + r.bg + ';">' + r.emoji + '</div><div class="srp-rest-info"><div class="srp-rest-name">' + srchHighlight(r.name,query) + '</div><div class="srp-rest-meta"><span>⭐ ' + r.rating + '</span><span>🕐 ' + r.time + '</span><span>Min ' + r.minOrder + '</span></div><div style="font-size:.72rem;color:var(--smoke);margin-top:.3rem;">' + r.cuisine + '</div></div></div>'; });
+    html += '</div>';
+  }
+  if (allFoods.length > 0) {
+    html += '<div style="font-weight:700;font-size:.9rem;color:var(--dark);margin-bottom:.8rem;">🍽️ Dishes (' + allFoods.length + ')</div><div class="srp-grid">';
+    allFoods.forEach(function(f) {
+      var safePrice = parseFloat(f.price.replace('$','')) || 0;
+      html += '<div class="food-card"><div class="food-img ' + f.bg + '" style="height:140px;font-size:4rem;">' + f.emoji + '</div><div class="food-info"><div class="food-name">' + srchHighlight(f.name,query) + '</div><div class="food-desc" style="display:block;">' + f.desc + '</div><div style="font-size:.74rem;color:var(--smoke);margin-bottom:.5rem;">' + srchHighlight(f.restaurant,query) + '</div><div class="food-footer"><span class="food-price">' + f.price + '</span><div class="food-meta"><span class="meta-item">⭐ ' + f.rating + '</span><span class="meta-item">🕐 ' + f.time + '</span></div><button class="add-btn" data-name="' + f.name + '" data-price="' + safePrice + '" data-emoji="' + f.emoji + '" onclick="srchAddFood(this)">+</button></div></div></div>';
+    });
+    html += '</div>';
+  }
+  if (!query) {
+    html = '<div style="font-weight:700;font-size:.9rem;color:var(--dark);margin-bottom:.8rem;">🏪 All Restaurants</div><div class="srp-grid" style="margin-bottom:1.8rem;">';
+    SEARCH_DATA.restaurants.forEach(function(r){ html += '<div class="srp-restaurant-card" data-rest="' + r.name + '"><div class="srp-rest-banner" style="background:' + r.bg + ';">' + r.emoji + '</div><div class="srp-rest-info"><div class="srp-rest-name">' + r.name + '</div><div class="srp-rest-meta"><span>⭐ ' + r.rating + '</span><span>🕐 ' + r.time + '</span></div><div style="font-size:.72rem;color:var(--smoke);margin-top:.3rem;">' + r.cuisine + '</div></div></div>'; });
+    html += '</div><div style="font-weight:700;font-size:.9rem;color:var(--dark);margin-bottom:.8rem;">🍽️ All Dishes</div><div class="srp-grid">';
+    SEARCH_DATA.foods.forEach(function(f){ var sp = parseFloat(f.price.replace('$',''))||0; html += '<div class="food-card"><div class="food-img ' + f.bg + '" style="height:130px;font-size:3.5rem;">' + f.emoji + '</div><div class="food-info"><div class="food-name">' + f.name + '</div><div style="font-size:.74rem;color:var(--smoke);margin-bottom:.4rem;">' + f.restaurant + '</div><div class="food-footer"><span class="food-price">' + f.price + '</span><button class="add-btn" data-name="' + f.name + '" data-price="' + sp + '" data-emoji="' + f.emoji + '" onclick="srchAddFood(this)">+</button></div></div></div>'; });
+    html += '</div>';
+  }
+  resultsEl.innerHTML = html;
+  // Attach click on restaurant cards
+  resultsEl.querySelectorAll('.srp-restaurant-card[data-rest]').forEach(function(card) {
+    card.style.cursor = 'pointer';
+    card.onclick = function() { srchClose(); openRestPage(card.getAttribute('data-rest')); };
+  });
+}
+
+function srchSetFilter(cat) { srchActiveFilter = cat; srchRunSearch(srchCurrentQuery); }
+function srchPickRestaurant(name) { srchClose(); pfShowToast('🏪 ' + name + ' — coming soon!'); }
+function srchAddFood(btn) {
+  var name = btn.dataset.name, price = parseFloat(btn.dataset.price), emoji = btn.dataset.emoji;
+  if (!cart[name]) cart[name] = { price:price, qty:0, emoji:emoji };
+  cart[name].qty++; updateCartUI();
+  document.getElementById('cartFloat').style.display = 'flex';
+  renderCardStepper(btn, name);
+  pfShowToast('🛒 ' + name + ' added to cart!');
+}
+
+// ═══════════════════════════════════════════════════
+//  RESTAURANT LISTING + DETAIL PAGE
+// ═══════════════════════════════════════════════════
+var RESTAURANTS = [
+  { id:'pizza-house', name:'The Pizza House', emoji:'🍕', bg:'linear-gradient(135deg,#FFF0E0,#FFD4A8)', rating:'4.8', ratingCount:'2.1K', cuisine:'Italian · Pizza · Pasta', distance:'1.2 km', time:'20-30 mins', minOrder:'$10', offer:'50% OFF up to $5', offer2:'Free delivery above $15', tags:['Pizza','Italian'],
+    menu:[
+      { section:'Most Ordered', items:[{name:'Margherita Supreme',price:12.99,desc:'Fresh mozzarella, basil, san marzano tomatoes',emoji:'🍕',veg:true,popular:true},{name:'Pepperoni Pizza',price:14.49,desc:'Classic pepperoni, mozzarella, tomato sauce',emoji:'🍕',veg:false,popular:true}]},
+      { section:'Recommended', items:[{name:'Veggie Supreme Pizza',price:13.49,desc:'Bell peppers, mushrooms, olives, onions',emoji:'🍕',veg:true,popular:false},{name:'Garlic Bread',price:4.99,desc:'Toasted baguette with garlic butter and herbs',emoji:'🥖',veg:true,popular:false},{name:'Tiramisu',price:6.99,desc:'Italian dessert with espresso-soaked ladyfingers',emoji:'🍰',veg:true,popular:false}]},
+      { section:'Drinks', items:[{name:'Cold Coffee',price:3.99,desc:'Rich cold brew with milk, caramel drizzle',emoji:'🥤',veg:true,popular:false},{name:'Lemonade',price:2.99,desc:'Fresh squeezed with mint and ginger',emoji:'🍋',veg:true,popular:false}]}
+    ]},
+  { id:'burger-republic', name:'Burger Republic', emoji:'🍔', bg:'linear-gradient(135deg,#FFF3E0,#FFCC80)', rating:'4.9', ratingCount:'5.4K', cuisine:'American · Burgers · Fries', distance:'0.8 km', time:'15-25 mins', minOrder:'$8', offer:'55% OFF up to $6', offer2:'Free delivery on first order', tags:['Burgers','American'],
+    menu:[
+      { section:'Most Ordered', items:[{name:'Smash Double Burger',price:14.99,desc:'Double smash patty, cheddar, caramelized onions',emoji:'🍔',veg:false,popular:true},{name:'Classic Cheeseburger',price:11.99,desc:'Juicy beef patty, American cheese, pickles',emoji:'🍔',veg:false,popular:true}]},
+      { section:'Recommended', items:[{name:'Veggie Burger',price:10.99,desc:'Black bean patty, avocado, lettuce, chipotle mayo',emoji:'🍔',veg:true,popular:false},{name:'Crispy Chicken Burger',price:12.49,desc:'Buttermilk fried chicken, coleslaw, honey mustard',emoji:'🍔',veg:false,popular:false},{name:'Loaded Fries',price:6.49,desc:'Thick-cut fries with cheese sauce, jalapeños',emoji:'🍟',veg:true,popular:false}]},
+      { section:'Drinks', items:[{name:'Chocolate Shake',price:4.99,desc:'Thick creamy milkshake with real chocolate',emoji:'🥤',veg:true,popular:false}]}
+    ]},
+  { id:'spice-garden', name:'Spice Garden', emoji:'🍛', bg:'linear-gradient(135deg,#FFF8E1,#FFECB3)', rating:'4.9', ratingCount:'8.7K', cuisine:'Indian · Biryani · Curries', distance:'1.5 km', time:'30-40 mins', minOrder:'$10', offer:'60% OFF up to $8', offer2:'Free delivery above $20', tags:['Indian','Biryani'],
+    menu:[
+      { section:'Most Ordered', items:[{name:'Chicken Biryani',price:11.99,desc:'Aromatic basmati rice with tender chicken, saffron and spices',emoji:'🍛',veg:false,popular:true},{name:'Mutton Biryani',price:14.99,desc:'Slow-cooked mutton with fragrant basmati, caramelized onions',emoji:'🍛',veg:false,popular:true}]},
+      { section:'Recommended', items:[{name:'Paneer Tikka Wrap',price:8.99,desc:'Spiced paneer, mint chutney in soft flatbread',emoji:'🥙',veg:true,popular:false},{name:'Butter Chicken',price:12.49,desc:'Tender chicken in rich tomato-cream sauce with naan',emoji:'🍛',veg:false,popular:false},{name:'Dal Makhani',price:9.49,desc:'Slow-cooked black lentils in creamy tomato gravy',emoji:'🥘',veg:true,popular:false},{name:'Masala Dosa',price:7.49,desc:'Crispy rice crepe with potato masala, coconut chutney',emoji:'🫓',veg:true,popular:false}]},
+      { section:'Drinks', items:[{name:'Mango Lassi',price:3.99,desc:'Fresh mango blended with yogurt and cardamom',emoji:'🥛',veg:true,popular:false},{name:'Gulab Jamun (4pc)',price:4.49,desc:'Soft milk dumplings soaked in rose-cardamom syrup',emoji:'🍮',veg:true,popular:false}]}
+    ]},
+  { id:'ramen-lab', name:'Ramen Lab', emoji:'🍜', bg:'linear-gradient(135deg,#FCE4EC,#F8BBD9)', rating:'4.8', ratingCount:'3.2K', cuisine:'Japanese · Ramen · Gyoza', distance:'2.1 km', time:'25-35 mins', minOrder:'$12', offer:'40% OFF up to $4', offer2:'Free delivery above $18', tags:['Ramen','Japanese'],
+    menu:[
+      { section:'Most Ordered', items:[{name:'Spicy Ramen Bowl',price:13.50,desc:'Rich tonkotsu broth, chashu pork, soft egg, nori',emoji:'🍜',veg:false,popular:true},{name:'Shoyu Ramen',price:12.50,desc:'Clear soy-based broth, chicken, bamboo shoots, soft egg',emoji:'🍜',veg:false,popular:true}]},
+      { section:'Recommended', items:[{name:'Veggie Miso Ramen',price:11.50,desc:'Creamy miso broth, tofu, corn, mushrooms, nori',emoji:'🍜',veg:true,popular:false},{name:'Gyoza (6pc)',price:7.99,desc:'Pan-fried pork dumplings, ponzu dipping sauce',emoji:'🥟',veg:false,popular:false}]},
+      { section:'Drinks', items:[{name:'Matcha Latte',price:4.99,desc:'Premium ceremonial matcha with oat milk',emoji:'🍵',veg:true,popular:false}]}
+    ]},
+  { id:'tokyo-bites', name:'Tokyo Bites', emoji:'🍣', bg:'linear-gradient(135deg,#E3F2FD,#BBDEFB)', rating:'4.8', ratingCount:'1.9K', cuisine:'Japanese · Sushi · Sashimi', distance:'3.0 km', time:'15-25 mins', minOrder:'$15', offer:'30% OFF up to $5', offer2:'', tags:['Sushi','Japanese'],
+    menu:[
+      { section:'Most Ordered', items:[{name:'Sushi Platter (8pc)',price:18.99,desc:'Fresh nigiri and maki, wasabi, pickled ginger, soy sauce',emoji:'🍣',veg:false,popular:true},{name:'Dragon Roll (8pc)',price:16.99,desc:'Shrimp tempura, avocado, cucumber, topped with tuna',emoji:'🍣',veg:false,popular:true}]},
+      { section:'Recommended', items:[{name:'Veggie Maki (6pc)',price:10.99,desc:'Cucumber, avocado, carrot, pickled radish',emoji:'🥢',veg:true,popular:false},{name:'Miso Soup',price:3.49,desc:'Traditional dashi broth, tofu, seaweed',emoji:'🍵',veg:true,popular:false}]},
+      { section:'Desserts', items:[{name:'Mochi Ice Cream (3pc)',price:6.99,desc:'Soft rice cake with matcha, mango, or strawberry ice cream',emoji:'🍡',veg:true,popular:false}]}
+    ]},
+  { id:'sweet-lab', name:'Sweet Lab', emoji:'🍰', bg:'linear-gradient(135deg,#F3E5F5,#E1BEE7)', rating:'4.9', ratingCount:'4.1K', cuisine:'Desserts · Cakes · Ice Cream', distance:'0.6 km', time:'10-20 mins', minOrder:'$6', offer:'Buy 2 Get 1 Free', offer2:'Free delivery always', tags:['Desserts','Cakes'],
+    menu:[
+      { section:'Most Ordered', items:[{name:'Lava Chocolate Cake',price:7.99,desc:'Warm dark chocolate cake with molten center, vanilla ice cream',emoji:'🍰',veg:true,popular:true},{name:'Cheesecake Slice',price:6.99,desc:'New York-style creamy cheesecake with berry compote',emoji:'🍮',veg:true,popular:true}]},
+      { section:'Recommended', items:[{name:'Waffle Stack',price:8.99,desc:'Belgian waffles, fresh berries, whipped cream, maple syrup',emoji:'🧇',veg:true,popular:false},{name:'Brownie Sundae',price:7.49,desc:'Warm brownie, two scoops ice cream, hot fudge, nuts',emoji:'🍨',veg:true,popular:false}]},
+      { section:'Shakes', items:[{name:'Milkshake',price:4.99,desc:'Thick shake in chocolate, vanilla, strawberry, or Oreo',emoji:'🥤',veg:true,popular:false},{name:'Ice Cream Scoop',price:2.99,desc:'Single scoop, choose from 12 flavors',emoji:'🍦',veg:true,popular:false}]}
+    ]}
+];
+
+var rpCart = {}, currentRest = null, rpMenuFilter = 'All';
+
+function renderRestaurants() {
+  var grid = document.getElementById('restGrid'); if (!grid) return;
+  grid.innerHTML = '';
+  RESTAURANTS.forEach(function(r) {
+    var card = document.createElement('div'); card.className = 'rest-card';
+    card.onclick = (function(id){ return function(){ openRestPage(id); }; })(r.id);
+    card.innerHTML = '<div class="rest-banner" style="' + r.bg + ';"><span style="font-size:5rem;">' + r.emoji + '</span><span class="rest-offer-badge">' + r.offer + '</span><button class="rest-bookmark" onclick="event.stopPropagation()">🔖</button></div><div class="rest-info"><div class="rest-name">' + r.name + '</div><div class="rest-meta"><span class="rest-rating">⭐ ' + r.rating + '</span><span>' + r.distance + '</span><span>🕐 ' + r.time + '</span><span class="rest-free">🚀 Free</span></div><div class="rest-meta" style="margin-top:.3rem;">' + r.tags.map(function(t){ return '<span class="rest-tag">' + t + '</span>'; }).join('') + '</div><div class="rest-offer">🏷️ ' + r.offer + '</div></div>';
+    grid.appendChild(card);
+  });
+}
+
+function openRestPage(idOrName) {
+  var r = RESTAURANTS.find(function(x){ return x.id === idOrName || x.name === idOrName; });
+  if (!r) return;
+  currentRest = r; rpCart = {}; rpMenuFilter = 'All';
+  document.getElementById('rpTitle').textContent = r.name;
+  document.getElementById('rpName').textContent = r.name;
+  document.getElementById('rpBanner').style.background = r.bg;
+  document.getElementById('rpBanner').innerHTML = '<span style="font-size:7rem;">' + r.emoji + '</span>';
+  document.getElementById('rpOfferMain').textContent = r.offer;
+  document.getElementById('rpOfferSub').textContent = r.offer2;
+  document.getElementById('rpMeta').innerHTML = '<span class="rp-rating-big">⭐ ' + r.rating + ' (' + r.ratingCount + ')</span><span>' + r.distance + '</span><span>🕐 ' + r.time + '</span><span style="color:#27AE60;font-weight:600;">🚀 Free Delivery</span><span>' + r.cuisine + '</span>';
+  var pillsEl = document.getElementById('rpFilters'); pillsEl.innerHTML = '';
+  var allSections = ['All'].concat(r.menu.map(function(s){ return s.section; }));
+  allSections.forEach(function(s) {
+    var btn = document.createElement('button'); btn.className = 'rp-filter-btn' + (s==='All'?' active':''); btn.textContent = s;
+    btn.setAttribute('data-section', s); btn.onclick = function(){ rpSetFilter(this.getAttribute('data-section')); };
+    pillsEl.appendChild(btn);
+  });
+  rpRenderMenu();
+  var page = document.getElementById('restPage'); page.classList.add('open'); page.scrollTop = 0; document.body.style.overflow = 'hidden';
+}
+
+function closeRestPage() { document.getElementById('restPage').classList.remove('open'); document.body.style.overflow = ''; currentRest = null; }
+
+function rpSetFilter(section) {
+  rpMenuFilter = section;
+  document.querySelectorAll('.rp-filter-btn').forEach(function(btn){ btn.classList.toggle('active', btn.getAttribute('data-section') === section); });
+  rpRenderMenu();
+}
+
+function rpRenderMenu() {
+  if (!currentRest) return;
+  var container = document.getElementById('rpMenuSections'); container.innerHTML = '';
+  currentRest.menu.forEach(function(section) {
+    if (rpMenuFilter !== 'All' && rpMenuFilter !== section.section) return;
+    var divider = document.createElement('div'); divider.className = 'rp-section-divider'; container.appendChild(divider);
+    var secTitle = document.createElement('div'); secTitle.className = 'rp-section-title'; secTitle.innerHTML = '<span>' + section.section + '</span><button class="rp-section-toggle">▲</button>'; container.appendChild(secTitle);
+    section.items.forEach(function(item) {
+      var qty = rpCart[item.name] ? rpCart[item.name].qty : 0;
+      var mi = document.createElement('div'); mi.className = 'rp-menu-item';
+      var info = document.createElement('div'); info.className = 'rp-item-info';
+      var vi = document.createElement('div'); vi.className = 'rp-veg-icon ' + (item.veg?'veg':'nonveg'); info.appendChild(vi);
+      if (item.popular) { var ro = document.createElement('div'); ro.className = 'rp-item-reorder'; ro.innerHTML = '<span>🔴</span> Highly reordered'; info.appendChild(ro); }
+      var nm = document.createElement('div'); nm.className = 'rp-item-name'; nm.textContent = item.name; info.appendChild(nm);
+      var pr = document.createElement('div'); pr.className = 'rp-item-price'; pr.textContent = '$' + item.price.toFixed(2); info.appendChild(pr);
+      var de = document.createElement('div'); de.className = 'rp-item-desc'; de.textContent = item.desc; info.appendChild(de);
+      var imgWrap = document.createElement('div'); imgWrap.style.cssText = 'display:flex;flex-direction:column;align-items:center;flex-shrink:0;';
+      var imgEl = document.createElement('div'); imgEl.className = 'rp-item-img'; imgEl.style.background = currentRest.bg; imgEl.textContent = item.emoji;
+      var btnWrap = document.createElement('div'); btnWrap.style.cssText = 'margin-top:-14px;'; btnWrap.id = 'rpbw_' + rpSafeId(item.name);
+      rpRenderItemBtn(btnWrap, item, qty);
+      var cust = document.createElement('div'); cust.className = 'rp-customise'; cust.textContent = 'customisable';
+      imgWrap.appendChild(imgEl); imgWrap.appendChild(btnWrap); imgWrap.appendChild(cust);
+      mi.appendChild(info); mi.appendChild(imgWrap); container.appendChild(mi);
+    });
+  });
+}
+
+function rpRenderItemBtn(wrap, item, qty) {
+  wrap.innerHTML = '';
+  if (qty > 0) {
+    var st = document.createElement('div'); st.className = 'rp-stepper'; st.id = 'rps_' + rpSafeId(item.name);
+    var mb = document.createElement('button'); mb.textContent = '−'; mb.onclick = (function(n){ return function(){ rpDecrement(n); }; })(item.name);
+    var qs = document.createElement('span'); qs.textContent = qty;
+    var pb = document.createElement('button'); pb.textContent = '+'; pb.onclick = (function(n,p,e){ return function(){ rpIncrement(n,p,e); }; })(item.name, item.price, item.emoji);
+    st.appendChild(mb); st.appendChild(qs); st.appendChild(pb); wrap.appendChild(st);
+  } else {
+    var ab = document.createElement('button'); ab.className = 'rp-add-btn'; ab.id = 'rpab_' + rpSafeId(item.name); ab.innerHTML = 'ADD <span style="font-size:1rem;">+</span>';
+    ab.onclick = (function(n,p,e){ return function(){ rpAddItem(n,p,e); }; })(item.name, item.price, item.emoji);
+    wrap.appendChild(ab);
+  }
+}
+
+function rpSafeId(name) { return name.replace(/[^a-zA-Z0-9]/g, '_'); }
+function rpAddItem(name, price, emoji) { rpCart[name] = { price:price, qty:1, emoji:emoji }; var item = null; currentRest.menu.forEach(function(s){ s.items.forEach(function(it){ if(it.name===name) item=it; }); }); if (!item) return; var w = document.getElementById('rpbw_' + rpSafeId(name)); if (w) rpRenderItemBtn(w, item, 1); pfShowToast('🛒 ' + name + ' added!'); }
+function rpIncrement(name, price, emoji) { if (!rpCart[name]) rpCart[name]={price:price,qty:0,emoji:emoji}; rpCart[name].qty++; var s=document.getElementById('rps_'+rpSafeId(name)); if(s) s.querySelector('span').textContent=rpCart[name].qty; }
+function rpDecrement(name) { if (!rpCart[name]) return; rpCart[name].qty--; if (rpCart[name].qty<=0) { delete rpCart[name]; var item=null; currentRest.menu.forEach(function(s){s.items.forEach(function(it){if(it.name===name)item=it;});}); if(!item)return; var w=document.getElementById('rpbw_'+rpSafeId(name)); if(w) rpRenderItemBtn(w,item,0); } else { var s=document.getElementById('rps_'+rpSafeId(name)); if(s) s.querySelector('span').textContent=rpCart[name].qty; } }
+
+// ── Init on page load
+window.addEventListener('DOMContentLoaded', function() {
+  locUpdateNavBar();
+  try { var av=localStorage.getItem('sb_avatar'); if(av) pfApplyAvatar(av); } catch(e) {}
+  try { var prefs=JSON.parse(localStorage.getItem('sb_prefs')||'{}'); if(prefs.dark) pfApplyDark(true); } catch(e) {}
+  renderRestaurants();
+});
+
+// ═══════════════════════════════════════════════════
+//  LOGIN SYSTEM
+// ═══════════════════════════════════════════════════
+var VALID_PHONE = '9876543210';
+var VALID_OTP   = '112233';
+var loginCurrentPhone = '';
+
+function showLoginPage() {
+  document.getElementById('loginPage').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Reset to step 1
+  document.getElementById('loginStep1').className = 'login-step active';
+  document.getElementById('loginStep2').className = 'login-step';
+  document.getElementById('loginStep3').className = 'login-step';
+  document.getElementById('loginPhone').value = '';
+  document.getElementById('loginOTP').value = '';
+}
+
+function hideLoginPage() {
+  document.getElementById('loginPage').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function loginSendOTP() {
+  var phone = document.getElementById('loginPhone').value.trim();
+  if (phone.length !== 10) { pfShowToast('❌ Enter a valid 10-digit mobile number'); return; }
+  loginCurrentPhone = phone;
+  document.getElementById('loginStep1').className = 'login-step';
+  document.getElementById('loginStep2').className = 'login-step active';
+  pfShowToast('✅ OTP sent to +91 ' + phone);
+}
+
+function loginVerifyOTP() {
+  var otp = document.getElementById('loginOTP').value.trim();
+  if (otp !== VALID_OTP) { pfShowToast('❌ Wrong OTP. Use 112233'); return; }
+  // Login success
+  try { localStorage.setItem('sb_logged_in', 'true'); localStorage.setItem('sb_phone', loginCurrentPhone); } catch(e) {}
+  // Set user data from phone
+  var userData = { name: 'Xoofy User', email: loginCurrentPhone + '@xoofy.in', phone: '+91 ' + loginCurrentPhone, dob: '', pref: 'No Preference' };
+  try { localStorage.setItem('sb_user', JSON.stringify(userData)); } catch(e) {}
+  document.getElementById('loginWelcomeName').textContent = 'Welcome! 👋';
+  document.getElementById('loginStep2').className = 'login-step';
+  document.getElementById('loginStep3').className = 'login-step active';
+  setTimeout(function() { hideLoginPage(); pfRenderUser(); pfShowToast('🎉 Logged in successfully!'); }, 1500);
+}
+
+function loginGoBack() {
+  document.getElementById('loginStep2').className = 'login-step';
+  document.getElementById('loginStep1').className = 'login-step active';
+}
+
+// Check login status on load
+window.addEventListener('DOMContentLoaded', function() {
+  try {
+    var loggedIn = localStorage.getItem('sb_logged_in');
+    if (loggedIn !== 'true') { setTimeout(showLoginPage, 300); }
+  } catch(e) { setTimeout(showLoginPage, 300); }
+});
+
+</script>
+
+
+
+<!-- ═══ SEARCH RESULTS PAGE ═══ -->
+<div id="searchResultsPage">
+  <div class="srp-header">
+    <button class="srp-back" onclick="srchClose()">←</button>
+    <div class="srp-input-wrap">
+      <span style="font-size:1rem;">🔍</span>
+      <input type="text" id="srpInput" placeholder="Search food or restaurants…"
+        autocomplete="off" oninput="srchRunSearch(this.value)" onkeydown="srchOnKey(event)">
+      <button class="srp-clear" id="srpClear" onclick="srchClearInput()" style="display:none;">✕</button>
+    </div>
+  </div>
+  <div class="srp-body">
+    <div class="srp-count" id="srpCount"></div>
+    <div class="srp-filter-row" id="srpFilters"></div>
+    <div id="srpResults"></div>
+  </div>
+</div>
+
+
+<!-- ═══ RESTAURANT DETAIL PAGE ═══ -->
+<div id="restPage">
+  <div class="rp-header">
+    <button class="rp-back" onclick="closeRestPage()">←</button>
+    <div class="rp-title" id="rpTitle">Restaurant</div>
+    <button class="rp-search-btn">🔍</button>
+  </div>
+  <div class="rp-banner" id="rpBanner"></div>
+  <div class="rp-info-card">
+    <div class="rp-rest-name" id="rpName"></div>
+    <div class="rp-rest-meta" id="rpMeta"></div>
+  </div>
+  <div class="rp-offer-strip">
+    <span class="rp-offer-icon">🏷️</span>
+    <div><strong id="rpOfferMain"></strong> &nbsp;<span id="rpOfferSub" style="color:var(--smoke);font-size:.78rem;"></span></div>
+  </div>
+  <div class="rp-filters" id="rpFilters"></div>
+  <div id="rpMenuSections"></div>
+</div>
+
+
+<!-- ═══ LOGIN PAGE ═══ -->
+<div id="loginPage">
+  <div class="login-card">
+    <div class="login-logo"><span style="background:linear-gradient(135deg,#FF8C00,#F97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">X</span><span style="color:#7C3AED;">oofy</span></div>
+    <div class="login-sub">Order food from your favourite restaurants</div>
+
+    <!-- Step 1: Phone -->
+    <div class="login-step active" id="loginStep1">
+      <label class="login-label">Mobile Number</label>
+      <input class="login-input" id="loginPhone" type="tel" placeholder="Enter 10-digit mobile number" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+      <button class="login-btn" onclick="loginSendOTP()">Send OTP →</button>
+    </div>
+
+    <!-- Step 2: OTP -->
+    <div class="login-step" id="loginStep2">
+      <div class="login-otp-hint">🔐 OTP sent! Use <strong>112233</strong> to login</div>
+      <label class="login-label">Enter OTP</label>
+      <input class="login-input" id="loginOTP" type="tel" placeholder="6-digit OTP" maxlength="6" oninput="this.value=this.value.replace(/[^0-9]/g,'')" onkeyup="if(this.value.length===6)loginVerifyOTP()">
+      <button class="login-btn" onclick="loginVerifyOTP()">Verify OTP ✓</button>
+      <button class="login-back" onclick="loginGoBack()">← Change number</button>
+    </div>
+
+    <!-- Step 3: Welcome -->
+    <div class="login-step" id="loginStep3">
+      <div class="login-welcome">
+        <span class="login-welcome-emoji">🎉</span>
+        <div class="login-welcome-name" id="loginWelcomeName">Welcome!</div>
+        <div class="login-welcome-sub">You're logged in successfully</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
